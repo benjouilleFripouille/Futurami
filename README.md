@@ -11,4 +11,6 @@ Aides et tips:
   
 -> Avec GitHub:
     - Une pop-up va te demander si tu veux ouvrir GitHub Desktop, tu dis oui logique
-    - 
+    - Ensuite, on va te demander de cloner les fichiers, si c'est déjà fait on s'en fiche
+    - Puis au milieu de l'écran doit y avoir de marqué "No local changes", puis en dessous y a 2 cases:
+    `
