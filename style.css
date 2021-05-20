@@ -1,104 +1,163 @@
-*
-{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: 'Lexend Mega', sans-serif;
-} 
-body {
+/* Général */
+
+body{
+    margin: 0;
+}
+
+section{
+    height: 100vh;
+}
+
+/* Burger */
+
+.logoBurger{
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    width: 55px;
+    height: 55px;
+    z-index: 999;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: black ;
-}
-.container
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-    flex-wrap: wrap;
 }
 
-.container .box {
-    position: relative;
-    width: 320px;
-    height: 400px;
-    color: #fff;
-    background: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 30px;
-    transition: 0.5s;
-}
-.container .box:hover {
-    transform: translateY(-20px);
-}
-.container .box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,#ffbc00,#ff0058);
-}
-.container .box::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,#ffbc00,#ff0058);
-    filter: blur(40px);
+.logoBurger:active ~ .divBurger{
+    transform: translateX(0);
 }
 
-.container .box span {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    background: rgba(0, 0,0, 0.6);
-    z-index: 2;
+#wrap{
 
 }
 
-.container .box span::before
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1) ;
-    pointer-events: none;
+.traitG{
+    width: 55px;
+    border: black solid;
+    background-color: black;
+    border-radius: 10px;
 }
-.container .box .content
-{
-    position: relative;
-    z-index: 10; 
-    padding: 20px 40px;
-}
-.container .box .content h2 {
-    font-size: 2em;
-    color: white;
+
+.trait2{
+    margin-top: 10px;
     margin-bottom: 10px;
-    line-height: 1.5em;
-
 }
-.container .box .content a {
-    display: inline-block;
-    font-size: 1.1em;
-    color: #111;
-    background: white;
-    padding: 10px;
+
+.divBurger{
+    height: 100vh;
+    width: 20vw;
+    background-color: white;
+
+    position: fixed;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(20vw);
+    transition: all 1s ease;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li{
+    display: block;
+}
+
+a{
     text-decoration: none;
-    font: 700;
-    margin-top: 5px;
+    display: block;
+    color: black;
+}
+
+#li2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#li4{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Section Métier-dex */
+
+.MetierDex1{
+    background: rgb(255,175,175);
+    background: linear-gradient(31deg, rgba(255,175,175,1) 21%, rgba(254,212,174,1) 52%, rgba(255,243,216,1) 76%, rgba(255,226,249,1) 222%, rgba(221,255,224,1) 222%, rgba(255,218,223,1) 222%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Section Mini-Jeu */
+
+.MiniJeu1{
+    background: rgb(88,69,113);
+    background: linear-gradient(31deg, rgba(88,69,113,1) 21%, rgba(118,120,177,1) 53%, rgba(176,137,226,1) 83%, rgba(255,226,249,1) 222%, rgba(221,255,224,1) 222%, rgba(255,218,223,1) 222%);
+}
+
+
+/* Section BUT MMI */
+
+.BUTmmi{
+    background: rgb(1,51,71);
+    background: linear-gradient(31deg, rgba(1,51,71,1) 20%, rgba(2,103,143,1) 49%, rgba(128,179,199,1) 74%, rgba(255,226,249,1) 222%, rgba(221,255,224,1) 222%, rgba(255,218,223,1) 222%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoBUT{
+    width: 25%;
+    height: 60%;
+    border: solid black;
+}
+
+.defMMI{
+    width: 30%;
+}
+
+
+/* Section Nous (les créateurs) */
+
+.Nous{
+    background-color: black;
+}
+
+
+/* Fonts */
+
+@font-face{
+    font-family: 'FuturaPTMedium';
+    src: url("../FONTS/FuturaPT/Futura_PT_Medium/FuturaPTMedium.woff") format("woff"),
+         url("../FONTS/FuturaPT/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2");
+         font-style: normal;
+         font-weight: medium;
+}
+
+@font-face {
+    font-family: 'FuturaPTBook';
+    src: url("../FONTS/FuturaPT/Futura_PT_Book/FuturaPTBook.woff") format("woff"),
+         url("../FONTS/FuturaPT/Futura_PT_Book/FuturaPTBook.woff2") format("woff2");
+         font-style: normal;
+         font-weight: normal;
 }
