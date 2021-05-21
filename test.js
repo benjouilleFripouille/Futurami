@@ -8,13 +8,13 @@ $(document).ready(function(){
     $('#carte1').on('click', function(){
         clicCarte1++;
         console.log(clicCarte1);
-        $('#1').text("Vous a cliqué " +clicCarte1+ " fois sur la 1ère carte !");
+        $('#1').text("Vous avez cliqué " +clicCarte1+ " fois sur la 1ère carte !");
     })
 
     $('#carte2').on('click', function(){
         clicCarte2++;
         console.log(clicCarte2);
-        $('#2').text("Vous a cliqué " +clicCarte2+ " fois sur la 2ème carte !");
+        $('#2').text("Vous avez cliqué " +clicCarte2+ " fois sur la 2ème carte !");
     })
 
 })
