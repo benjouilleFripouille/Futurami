@@ -110,7 +110,7 @@ a{
 }
 
 .titreMetier{
-    font-family: 'FuturaPTMedium';
+    font-family: 'FuturaPTBook';
 }
 
 
@@ -156,16 +156,16 @@ a{
 
 @font-face{
     font-family: 'FuturaPTMedium';
-    src: url("../") format("woff"),
-         url("../FONTS/FuturaPT/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2");
+    src: url("./FONTS/Futura_PT_Medium/FuturaPTMedium.woff") format("woff"),
+         url("./FONTS/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2");
          font-style: normal;
          font-weight: medium;
 }
 
 @font-face {
     font-family: 'FuturaPTBook';
-    src: url("../FONTS/Futura_PT_Book/FuturaPTBook.woff") format("woff"),
-         url("../FONTS/FuturaPT/Futura_PT_Book/FuturaPTBook.woff2") format("woff2");
+    src: url("./FONTS/Futura_PT_Book/FuturaPTBook.woff") format("woff"),
+         url("./FONTS/Futura_PT_Book/FuturaPTBook.woff2") format("woff2");
          font-style: normal;
          font-weight: normal;
 }
