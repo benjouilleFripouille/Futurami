@@ -99,7 +99,8 @@ a{
 /* Section Accueil */
 
 .Accueil{
-    background-image: url("./Img/");
+    background-image: url("./Img/Nuages/Blanc/Nuage3.png");
+    background-position: left;
 }
 
 /* Section Métier-dex */
