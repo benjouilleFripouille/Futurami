@@ -2,6 +2,8 @@
 
 body{
     margin: 0;
+    background: rgb(2,103,143);
+background: linear-gradient(180deg, rgba(2,103,143,1) 0%, rgba(118,120,177,1) 18%, rgba(176,137,226,1) 32%, rgba(227,171,229,1) 49%, rgba(255,175,175,1) 64%, rgba(254,212,174,1) 78%, rgba(255,243,216,1) 92%, rgba(0,0,0,1) 100%);
 }
 
 section{
@@ -28,14 +30,11 @@ section{
     transform: translateX(0);
 }
 
-/* #wrap{
-
-} */
 
 .traitG{
     width: 55px;
-    border: black solid;
-    background-color: black;
+    border: white solid;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -96,11 +95,18 @@ a{
     margin-bottom: 100px;
 }
 
+
+/* Section Accueil */
+
+.Accueil{
+    background-image: url("./Img/");
+}
+
 /* Section Métier-dex */
 
 .MetierDex1{
-    background: rgb(255,175,175);
-    background: linear-gradient(31deg, rgba(255,175,175,1) 21%, rgba(254,212,174,1) 52%, rgba(255,243,216,1) 76%, rgba(255,226,249,1) 222%, rgba(221,255,224,1) 222%, rgba(255,218,223,1) 222%);
+    /* background: rgb(255,175,175); */
+    /* /* /* /* background: linear-gradient(31deg, rgba(255,175,175,1) 21%, rgba(254,212,174,1) 52%, rgba(255,243,216,1) 76%, rgba(255,226,249,1) 222%, rgba(221,255,224,1) 222%, rgba(255,218,223,1) 222%); */ 
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -119,8 +125,8 @@ a{
 /* Section Mini-Jeu */
 
 .MiniJeu1{
-    background: rgb(88,69,113);
-    background: linear-gradient(31deg, rgba(88,69,113,1) 21%, rgba(118,120,177,1) 53%, rgba(176,137,226,1) 83%, rgba(255,226,249,1) 222%, rgba(221,255,224,1) 222%, rgba(255,218,223,1) 222%);
+    /* background: rgb(88,69,113); */
+    /* /* /* /* background: linear-gradient(31deg, rgba(88,69,113,1) 21%, rgba(118,120,177,1) 53%, rgba(176,137,226,1) 83%, rgba(255,226,249,1) 222%, rgba(221,255,224,1) 222%, rgba(255,218,223,1) 222%); */ 
 
     display: flex;
     justify-content: center;
@@ -137,8 +143,8 @@ a{
 /* Section BUT MMI */
 
 .BUTmmi{
-    background: rgb(1,51,71);
-    background: linear-gradient(31deg, rgba(1,51,71,1) 20%, rgba(2,103,143,1) 49%, rgba(128,179,199,1) 74%, rgba(255,226,249,1) 222%, rgba(221,255,224,1) 222%, rgba(255,218,223,1) 222%);
+    /* background: rgb(1,51,71); */
+    /* /* /* /* background: linear-gradient(31deg, rgba(1,51,71,1) 20%, rgba(2,103,143,1) 49%, rgba(128,179,199,1) 74%, rgba(255,226,249,1) 222%, rgba(221,255,224,1) 222%, rgba(255,218,223,1) 222%); */
 
     display: flex;
     flex-direction: row;
