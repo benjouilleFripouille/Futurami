@@ -21,4 +21,4 @@ Aides et tips:
 -> Sauvegarder:
     - Après avoir fait tes modifs dans le code sur VS ou autre, va dans GitHub Desktop, normalement il apparaîtra tout ton code avec des lignes rouges/vertes en fonction de ce que t'as modifié ou non.
     - En bas à gauche, y a une grosse case avec un champs "Summary (required)" à côté de ta photo de profil, puis en dessous un champs "Description" puis un bouton "commit to main". Il faut que t'écrives un truc, genre le nom de ta modif ou autre dans le champs "summary" parce que c'est obligatoire et si tu veux, tu peux détailler en dessous.
-    - Après tu fais commit - logique - et c'est tout !
+    - Après tu fais commit - logique - puis dans les cases au milieu de l'écran sous "No local changes", devrait y avoir une nouvelle case avec un bouton bleu "Push origin", tu cliques et c'est bon !
