@@ -13,7 +13,7 @@ section{
 
 .bodyBis{
     background-image: url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Blanc/Nuage1.png"), url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Gris/Nuage1.png"), url("./Img/Nuages/Gris/Nuage3.png"), url("./Img/Nuages/Noir/Nuage3.png"), url("./Img/Nuages/Noir/Nuage2.png"), url("./Img/Nuages/Noir/Nuage1.png");
-       background-position: -100% 50vh, 250% 40vh, -100% 150vh, 250% 150vh, -100% 240vh, 250% 250vh, -100% 250vh, 80% 370vh, 250% 360vh;
+       background-position: -100% 50vh, 250% 40vh, -100% 150vh, 250% 150vh, -100% 240vh, 250% 250vh, -100% 250vh, 80% 370vh, 250% -150%;
        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
        background-size: 80%, 85%, 80%, 85%, 75%, 75%, 75%, 75%, 75%, 75%;
        
@@ -90,8 +90,18 @@ section{
 
 /* Section Nous (les créateurs) */
 
-.Nous{
-    height: 120vh;
+.nous{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nous > div{
+    width: 20%;
+    height: 30%;
+    border: white solid;
 }
 
 
