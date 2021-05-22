@@ -196,12 +196,13 @@ section {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
 }
 
 .containerNous>div {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 320px;
