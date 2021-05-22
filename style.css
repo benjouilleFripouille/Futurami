@@ -12,13 +12,23 @@ section {
     height: 100vh;
 }
 
-.bodyBis {
-    background-image: url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Blanc/Nuage1.png"), url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Gris/Nuage1.png"), url("./Img/Nuages/Gris/Nuage3.png"), url("./Img/Nuages/Noir/Nuage3.png"), url("./Img/Nuages/Noir/Nuage2.png"), url("./Img/Nuages/Noir/Nuage1.png");
-    background-position: -100% 50vh, 250% 40vh, -100% 150vh, 250% 150vh, -100% 240vh, 250% 250vh, -100% 250vh, 80% 370vh, 250% -150%;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 80%, 85%, 80%, 85%, 75%, 75%, 75%, 75%, 75%, 75%;
+/* .bodyBis { */
+    /* background-image: url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Blanc/Nuage1.png"), url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Gris/Nuage1.png"), url("./Img/Nuages/Gris/Nuage3.png"), url("./Img/Nuages/Noir/Nuage3.png"), url("./Img/Nuages/Noir/Nuage2.png"), url("./Img/Nuages/Noir/Nuage1.png"); */
+    /* /* background-position: -100% 50vh, 250% 40vh, -100% 150vh, 250% 150vh, -100% 240vh, 250% 250vh, -100% 250vh, 80% 370vh, 250% -150%; */ 
+    /* /* background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat; */ 
+    /* background-size: 80%, 85%, 80%, 85%, 75%, 75%, 75%, 75%, 75%, 75%; */
 
+/* } */
+
+
+/* Nuages */
+
+img{
+    width: 50vw;
+    position: absolute;
+    z-index: -9999;
 }
+
 
 /* Burger */
 
@@ -47,11 +57,11 @@ section {
 }
 
 .hamburger-menu {
-    width: 35px;
-    height: 30px;
+    width: 60px;
+    height: 45px;
     position: fixed;
-    top: 50px;
-    right: 50px;
+    top: 3%;
+    right: 2%;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -60,13 +70,14 @@ section {
 
 .line {
     width: 100%;
-    height: 3px;
-    background-color: #000;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #fff;
     transition: all 0.8s;
 }
 
 .change .line-1 {
-    transform: rotateZ(-405deg) translate(-8px, 6px);
+    transform: rotateZ(-405deg) translate(-14px, 6px);
 }
 
 .change .line-2 {
@@ -74,7 +85,7 @@ section {
 }
 
 .change .line-3 {
-    transform: rotateZ(405deg) translate(-8px, -6px);
+    transform: rotateZ(405deg) translate(-14px, -6px);
 }
 
 .nav-list {
@@ -130,7 +141,7 @@ section {
 .Accueil {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    position: relative;
 }
 
 .titreAccueil {
@@ -139,6 +150,22 @@ section {
     font-size: 7rem;
     margin-top: 10%;
 }
+
+.B2{
+    top: 60vh;
+    left: -15vw;
+}
+
+.B3{
+    top: 60vh;
+    right: -10vw;
+}
+
+.B1{
+    top: 120vh;
+    right: -10vw;
+}
+
 
 /* Section Métier-dex */
 
@@ -203,9 +230,7 @@ section {
 .containerNous{
     width: 100%;
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-evenly;
-    /* align-items: center; */
 }
 
 .carte{
