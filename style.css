@@ -15,7 +15,7 @@ section {
     box-sizing: border-box;
 }
 
-img{
+img {
     width: 50vw;
     position: absolute;
     z-index: -9999;
@@ -149,12 +149,12 @@ a{
     margin-top: 10%;
 }
 
-.B2{
+.B2 {
     top: 60vh;
     left: -15vw;
 }
 
-.B3{
+.B3 {
     top: 60vh;
     right: 0;
 }
@@ -174,17 +174,17 @@ a{
     font-size: 7rem;
 }
 
-.B2_bis{
+.B2_bis {
     top: 155vh;
     left: -15vw;
 }
 
-.B2_bis{
+.B2_bis {
     top: 175vh;
     left: -15vw;
 }
 
-.B1{
+.B1 {
     top: 155vh;
     right: 0;
 }
@@ -204,13 +204,13 @@ a{
     font-size: 7rem;
 }
 
-.G1{
+.G1 {
     top: 245vh;
     right: 0;
     width: 40vw;
 }
 
-.G2{
+.G2 {
     top: 265vh;
     left: -10vw;
 }
@@ -235,17 +235,17 @@ a{
     width: 30%;
 }
 
-.N1{
+.N1 {
     top: 365vh;
     left: -10vw;
 }
 
-.N2{
+.N2 {
     top: 365vh;
     right: 0;
 }
 
-.N3{
+.N3 {
     top: 365vh;
     right: 0;
 }
@@ -261,13 +261,13 @@ a{
     align-items: center;
 }
 
-.containerNous{
+.containerNous {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.carte{
+.carte {
     width: 320px;
     height: 500px;
     border-radius: 10px;
@@ -275,13 +275,21 @@ a{
     animation: legendaire 1s ease infinite alternate-reverse;
 }
 
-.titreNous{
+.titreNous {
     color: white;
     font-family: 'FuturaPTMedium';
     font-size: 3rem;
 }
 
 /* Formulaire */
+
+.modal h2 {
+    position: relative;
+    font-size: 2.4rem;
+    font-family: "cera pro black";
+    font-weight: 700;
+    color: #3b1895;
+}
 
 .modal-bg {
     position: fixed;
@@ -295,7 +303,7 @@ a{
     align-items: center;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s opacity 0.5s;
+    transition: visibility 0s opacity 1s;
 }
 
 .bg-active {
@@ -306,26 +314,123 @@ a{
 .modal {
     position: relative;
     background-color: #fff;
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    border-radius: 20px;
 }
 
-.modal input[type="submit"] {
-    padding: 10px 30px;
-    background-color: aqua;
+.modal form {
+    width: 60%;
+}
+
+.input-box {
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+
+.input-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid transparent;
+    background: #F1D5F2;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    background-color: #fff;
+    border-color: #3b1895;
+}
+
+.input-box label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #B089E2;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color: #3b1895;
+    background: #fff;
+}
+
+.message-box {
+    min-height: 100px;
+    position: relative;
+}
+
+.message-box textarea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    resize: none;
+    background: #F1D5F2;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+
+.message-box textarea:focus {
+    border-color: #3b1895;
+    background-color: #fff;
+}
+
+.message-box label {
+    position: absolute;
+    font-size: 16px;
+    color: #B089E2;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.message-box textarea:focus~label {
+    left: 12px;
+    top: -10px;
+    color: #3b1895;
+    background: #fff;
+    font-size: 14px;
+}
+
+.input-box input[type="submit"]:hover {
+    background-color: #5e30d9;
+}
+
+.input-box input[type="submit"] {
     color: #fff;
-    border: none;
+    background: #3b1895;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .modal-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    font-size: 1.5rem;
+    top: 20px;
+    right: 20px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -367,12 +472,13 @@ a{
 /* Keyframes */
 
 @keyframes legendaire {
-    from{
+    from {
         -webkit-box-shadow: 0px 0px 15px 10px #FF8A22;
         box-shadow: 0px 0px 15px 10px #FF8A22;
 
     }
-    to{
+
+    to {
         -webkit-box-shadow: 0px 0px 15px 0px #FF8A22;
         box-shadow: 0px 0px 15px 0px #FF8A22;
     }
@@ -402,7 +508,7 @@ a{
 /* Media Queries */
 
 @media screen and (max-width: 1360px) {
-    .containerNous{
+    .containerNous {
         flex-wrap: wrap;
     }
 }
