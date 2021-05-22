@@ -3,21 +3,23 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(2, 103, 143);
+    /* border: red solid; */
+    background: black;
     background: linear-gradient(180deg, rgba(2, 103, 143, 1) 0%, rgba(118, 120, 177, 1) 12%, rgba(176, 137, 226, 1) 25%, rgba(227, 171, 229, 1) 36%, rgba(255, 175, 175, 1) 47%, rgba(254, 212, 174, 1) 59%, rgba(255, 243, 216, 1) 79%, rgba(0, 0, 0, 1) 80%);
+
 }
 
 section {
     height: 100vh;
+    box-sizing: border-box;
 }
 
-.bodyBis {
-    background-image: url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Blanc/Nuage1.png"), url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Gris/Nuage1.png"), url("./Img/Nuages/Gris/Nuage3.png"), url("./Img/Nuages/Noir/Nuage3.png"), url("./Img/Nuages/Noir/Nuage2.png"), url("./Img/Nuages/Noir/Nuage1.png");
-    background-position: -100% 50vh, 250% 40vh, -100% 150vh, 250% 150vh, -100% 240vh, 250% 250vh, -100% 250vh, 80% 370vh, 250% -150%;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 80%, 85%, 80%, 85%, 75%, 75%, 75%, 75%, 75%, 75%;
-
+img{
+    width: 50vw;
+    position: absolute;
+    z-index: -9999;
 }
+
 
 /* Burger */
 
@@ -46,11 +48,12 @@ section {
 }
 
 .hamburger-menu {
-    width: 35px;
-    height: 30px;
+    width: 60px;
+    height: 45px;
     position: fixed;
-    top: 50px;
-    right: 50px;
+    z-index: 9999;
+    top: 3%;
+    right: 2%;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -59,13 +62,14 @@ section {
 
 .line {
     width: 100%;
-    height: 3px;
-    background-color: #000;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #fff;
     transition: all 0.8s;
 }
 
 .change .line-1 {
-    transform: rotateZ(-405deg) translate(-8px, 6px);
+    transform: rotateZ(-405deg) translate(-14px, 6px);
 }
 
 .change .line-2 {
@@ -73,7 +77,7 @@ section {
 }
 
 .change .line-3 {
-    transform: rotateZ(405deg) translate(-8px, -6px);
+    transform: rotateZ(405deg) translate(-14px, -6px);
 }
 
 .nav-list {
@@ -129,15 +133,26 @@ section {
 .Accueil {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+
 }
 
 .titreAccueil {
     font-family: 'FuturaPTBook';
     color: white;
     font-size: 7rem;
-    margin-top: 200px;
+    margin-top: 10%;
 }
+
+.B2{
+    top: 60vh;
+    left: -15vw;
+}
+
+.B3{
+    top: 60vh;
+    right: 0;
+}
+
 
 /* Section Métier-dex */
 
@@ -153,6 +168,21 @@ section {
     font-size: 7rem;
 }
 
+.B2_bis{
+    top: 155vh;
+    left: -15vw;
+}
+
+.B3_bis{
+    top: 155vh;
+    left: -15vw;
+}
+
+.B1{
+    top: 155vh;
+    right: 0;
+}
+
 
 /* Section Mini-Jeu */
 
@@ -166,6 +196,16 @@ section {
     font-family: 'FuturaPTBook';
     color: white;
     font-size: 7rem;
+}
+
+.G1{
+    top: 255vh;
+    right: 0;
+}
+
+.G2{
+    top: 265vh;
+    left: -10vw;
 }
 
 
@@ -188,24 +228,50 @@ section {
     width: 30%;
 }
 
+.N1{
+    top: 365vh;
+    left: -10vw;
+}
+
+.N2{
+    top: 365vh;
+    right: 0;
+}
+
+.N3{
+    top: 365vh;
+    right: 0;
+}
+
 
 /* Section Nous (les créateurs) */
 
 .nous {
     height: 100vh;
-
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.nous>div {
+.containerNous{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carte{
     width: 320px;
     height: 500px;
     border-radius: 10px;
+    background-color: black;
+    animation: legendaire 1s ease infinite alternate-reverse;
+}
 
-    -webkit-box-shadow: 0px 0px 15px 10px #FF8A22;
-    box-shadow: 0px 0px 15px 10px #FF8A22;
+.titreNous{
+    color: white;
+    font-family: 'FuturaPTMedium';
+    font-size: 3rem;
 }
 
 /* Formulaire */
@@ -273,4 +339,26 @@ section {
         url("./FONTS/Futura_PT_Book/FuturaPTBook.woff2") format("woff2");
     font-style: normal;
     font-weight: normal;
+}
+
+/* Keyframes */
+
+@keyframes legendaire {
+    from{
+        -webkit-box-shadow: 0px 0px 15px 10px #FF8A22;
+        box-shadow: 0px 0px 15px 10px #FF8A22;
+
+    }
+    to{
+        -webkit-box-shadow: 0px 0px 15px 0px #FF8A22;
+        box-shadow: 0px 0px 15px 0px #FF8A22;
+    }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1360px) {
+    .containerNous{
+        flex-wrap: wrap;
+    }
 }
