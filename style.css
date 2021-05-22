@@ -1,37 +1,138 @@
 /* Général */
 
-body{
+body {
     margin: 0;
     padding: 0;
-    background: rgb(2,103,143);
-    background: linear-gradient(180deg, rgba(2,103,143,1) 0%, rgba(118,120,177,1) 12%, rgba(176,137,226,1) 25%, rgba(227,171,229,1) 36%, rgba(255,175,175,1) 47%, rgba(254,212,174,1) 59%, rgba(255,243,216,1) 79%, rgba(0,0,0,1) 80%);
+    background: rgb(2, 103, 143);
+    background: linear-gradient(180deg, rgba(2, 103, 143, 1) 0%, rgba(118, 120, 177, 1) 12%, rgba(176, 137, 226, 1) 25%, rgba(227, 171, 229, 1) 36%, rgba(255, 175, 175, 1) 47%, rgba(254, 212, 174, 1) 59%, rgba(255, 243, 216, 1) 79%, rgba(0, 0, 0, 1) 80%);
 }
 
-section{
+section {
     height: 100vh;
 }
 
-.bodyBis{
+.bodyBis {
     background-image: url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Blanc/Nuage1.png"), url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Blanc/Nuage2.png"), url("./Img/Nuages/Gris/Nuage1.png"), url("./Img/Nuages/Gris/Nuage3.png"), url("./Img/Nuages/Noir/Nuage3.png"), url("./Img/Nuages/Noir/Nuage2.png"), url("./Img/Nuages/Noir/Nuage1.png");
-       background-position: -100% 50vh, 250% 40vh, -100% 150vh, 250% 150vh, -100% 240vh, 250% 250vh, -100% 250vh, 80% 370vh, 250% -150%;
-       background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-       background-size: 80%, 85%, 80%, 85%, 75%, 75%, 75%, 75%, 75%, 75%;
-       
+    background-position: -100% 50vh, 250% 40vh, -100% 150vh, 250% 150vh, -100% 240vh, 250% 250vh, -100% 250vh, 80% 370vh, 250% -150%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 80%, 85%, 80%, 85%, 75%, 75%, 75%, 75%, 75%, 75%;
+
 }
 
 /* Burger */
 
+.container {
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.navbar {
+    width: 300px;
+    height: 100%;
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% 0 0 40%;
+    transition: right .8s cubic-bezier(1, 0, 0, 1);
+}
+
+.change {
+    right: 0;
+}
+
+.hamburger-menu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.8s;
+}
+
+.change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.nav-list {
+    text-align: right;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "FuturaPTMedium";
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 3px 0;
+}
+
+.nav-link::before,
+.nav-link::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: chocolate;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.nav-link::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.nav-link::before {
+    top: 0;
+    transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
 
 
 /* Section Accueil */
 
-.Accueil{
+.Accueil {
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
 
-.titreAccueil{
+.titreAccueil {
     font-family: 'FuturaPTBook';
     color: white;
     font-size: 7rem;
@@ -40,13 +141,13 @@ section{
 
 /* Section Métier-dex */
 
-.MetierDex1{
+.MetierDex1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.titreMetier{
+.titreMetier {
     font-family: 'FuturaPTBook';
     color: white;
     font-size: 7rem;
@@ -55,13 +156,13 @@ section{
 
 /* Section Mini-Jeu */
 
-.MiniJeu1{
+.MiniJeu1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.titreJeu{
+.titreJeu {
     font-family: 'FuturaPTBook';
     color: white;
     font-size: 7rem;
@@ -70,27 +171,27 @@ section{
 
 /* Section BUT MMI */
 
-.BUTmmi{
+.BUTmmi {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.logoBUT{
+.logoBUT {
     width: 25%;
     height: 60%;
     border: solid black;
 }
 
-.defMMI{
+.defMMI {
     width: 30%;
 }
 
 
 /* Section Nous (les créateurs) */
 
-.nous{
+.nous {
     height: 100vh;
 
     display: flex;
@@ -98,7 +199,7 @@ section{
     align-items: center;
 }
 
-.nous > div{
+.nous>div {
     width: 350px;
     height: 500px;
     border: white solid;
@@ -107,18 +208,18 @@ section{
 
 /* Fonts */
 
-@font-face{
+@font-face {
     font-family: 'FuturaPTMedium';
     src: url("./FONTS/Futura_PT_Medium/FuturaPTMedium.woff") format("woff"),
-         url("./FONTS/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2");
-         font-style: normal;
-         font-weight: medium;
+        url("./FONTS/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: medium;
 }
 
 @font-face {
     font-family: 'FuturaPTBook';
     src: url("./FONTS/Futura_PT_Book/FuturaPTBook.woff") format("woff"),
-         url("./FONTS/Futura_PT_Book/FuturaPTBook.woff2") format("woff2");
-         font-style: normal;
-         font-weight: normal;
+        url("./FONTS/Futura_PT_Book/FuturaPTBook.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
 }
