@@ -203,6 +203,7 @@ section {
     width: 320px;
     height: 500px;
     border-radius: 10px;
+    background-color: black;
 
     -webkit-box-shadow: 0px 0px 15px 10px #FF8A22;
     box-shadow: 0px 0px 15px 10px #FF8A22;
