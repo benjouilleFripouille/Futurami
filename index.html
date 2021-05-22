@@ -100,11 +100,23 @@
             <div class="modal-bg">
                 <div class="modal">
                     <h2>Contactez-nous !</h2>
-                    <label for="nom">Nom: </label>
-                    <input type="text" name="nom">
-                    <label for="email">Email: </label>
-                    <input type="email" name="email">
-                    <input type="submit" name="envoyer">
+                    <form method="post">
+                        <div class="input-box">
+                          <input type="text" name="nom" id="nom" required>
+                          <label for="nom">Entrez votre nom</label>
+                        </div>
+                        <div class="input-box">
+                          <input type="text" name="mail" id="mail" required>
+                          <label for="mail">Entrez votre email</label>
+                        </div>
+                        <div class="message-box">
+                          <textarea id="message" name="message" required></textarea>
+                          <label for="message">Entrez votre message</label>
+                        </div>
+                        <div class="input-box">
+                          <input type="submit" value="Envoyer">
+                        </div>
+                      </form>
                     <span class="modal-close">X</span>
                 </div>
             </div>
