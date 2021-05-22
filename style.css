@@ -238,6 +238,21 @@ img{
     width: 30%;
 }
 
+.N1{
+    top: 365vh;
+    left: -10vw;
+}
+
+.N2{
+    top: 365vh;
+    right: -10vw;
+}
+
+.N3{
+    top: 280vh;
+    right: -10vw;
+}
+
 
 /* Section Nous (les créateurs) */
 
