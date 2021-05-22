@@ -8,5 +8,6 @@ menuIcon.addEventListener("click", function(){
 $(document).ready(function(){
 
     $(document).load()
+    
 
 })
