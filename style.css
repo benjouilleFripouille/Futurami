@@ -200,11 +200,14 @@ section {
     align-items: center;
 }
 
-.containerNous>div {
+.containerNous{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.containerNous > div {
     width: 320px;
     height: 500px;
     border-radius: 10px;
