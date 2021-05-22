@@ -201,6 +201,9 @@ section {
 }
 
 .containerNous>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 320px;
     height: 500px;
     border-radius: 10px;
