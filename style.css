@@ -10,6 +10,7 @@ body {
 
 section {
     height: 100vh;
+    box-sizing: border-box;
 }
 
 /* .bodyBis { */
@@ -60,6 +61,7 @@ img{
     width: 60px;
     height: 45px;
     position: fixed;
+    z-index: 9999;
     top: 3%;
     right: 2%;
     cursor: pointer;
@@ -161,11 +163,6 @@ img{
     right: -10vw;
 }
 
-.B1{
-    top: 120vh;
-    right: -10vw;
-}
-
 
 /* Section Métier-dex */
 
@@ -181,6 +178,21 @@ img{
     font-size: 7rem;
 }
 
+.B2_bis{
+    top: 155vh;
+    left: -15vw;
+}
+
+.B3_bis{
+    top: 155vh;
+    left: -15vw;
+}
+
+.B1{
+    top: 155vh;
+    right: -10vw;
+}
+
 
 /* Section Mini-Jeu */
 
@@ -194,6 +206,16 @@ img{
     font-family: 'FuturaPTBook';
     color: white;
     font-size: 7rem;
+}
+
+.G1{
+    top: 255vh;
+    right: -10vw;
+}
+
+.G2{
+    top: 265vh;
+    left: -10vw;
 }
 
 
