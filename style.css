@@ -195,6 +195,7 @@ section {
     height: 100vh;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -205,6 +206,10 @@ section {
     border-radius: 10px;
     background-color: black;
     animation: legendaire 1s ease infinite alternate-reverse;
+}
+
+.titreNous{
+    color: white;
 }
 
 /* Formulaire */
