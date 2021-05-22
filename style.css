@@ -21,6 +21,11 @@ img{
     z-index: -9999;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /* Burger */
 
@@ -325,6 +330,22 @@ img{
     cursor: pointer;
 }
 
+.modal-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 3%;
+    right: 1%;
+    width: 120px;
+    height: auto;
+}
+
+.modal-btn:hover{
+    animation: enveloppe 0.9s ease infinite alternate-reverse;
+    cursor: pointer;
+    transform: translateY(10px);
+}
+
+
 /* Fonts */
 
 @font-face {
@@ -355,6 +376,27 @@ img{
         -webkit-box-shadow: 0px 0px 15px 0px #FF8A22;
         box-shadow: 0px 0px 15px 0px #FF8A22;
     }
+}
+
+@keyframes enveloppe {
+    0%{
+        transform: rotateZ(-30deg);
+    }
+    33%{
+        transform: rotateZ(30deg);
+    }
+
+    66%{
+        transform: rotateZ(-30deg);
+    }
+
+    100%{
+        transform: rotateZ(0deg);
+    }
+    
+    
+    
+    
 }
 
 /* Media Queries */
