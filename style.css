@@ -283,12 +283,14 @@ a{
 
 /* Formulaire */
 
+form{
+    font-family: 'FuturaPTMedium';
+}
+
 .modal h2 {
     position: relative;
     font-size: 2.4rem;
-    font-family: "cera pro black";
-    font-weight: 700;
-    color: #3b1895;
+    color: black;
 }
 
 .modal-bg {
@@ -315,16 +317,20 @@ a{
     position: relative;
     background-color: #fff;
     width: 50%;
-    height: 60%;
+    height: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 .modal form {
     width: 60%;
+    border: black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .input-box {
@@ -338,12 +344,39 @@ a{
     position: absolute;
     height: 100%;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 10px;
     outline: none;
     border: 2px solid transparent;
-    background: #F1D5F2;
-    font-size: 16px;
+    font-size: 1rem;
     transition: all 0.3s ease;
+}
+
+.nomPrenom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nom{
+    background: #80b3c7;
+    width: 95%;
+}
+
+#prenom{
+    background: #80b3c7;
+    width: 100%;
+}
+
+#mail{
+    background: #b089e2;
+}
+
+#objet{
+    background: #ffafaf;
+}
+
+#message{
+    background: #fff3d8;
 }
 
 .input-box input:focus,
@@ -356,7 +389,7 @@ a{
     position: absolute;
     left: 18px;
     top: 50%;
-    color: #B089E2;
+    color: black;
     transform: translateY(-50%);
     pointer-events: none;
     transition: all 0.3s ease;
@@ -383,7 +416,7 @@ a{
     border-radius: 6px;
     outline: none;
     resize: none;
-    background: #F1D5F2;
+    background: black;
     border: 2px solid transparent;
     transition: all 0.3s ease;
 }
@@ -396,8 +429,8 @@ a{
 
 .message-box label {
     position: absolute;
-    font-size: 16px;
-    color: #B089E2;
+    font-size: 1rem;
+    color: black;
     left: 18px;
     top: 6px;
     pointer-events: none;
@@ -409,7 +442,7 @@ a{
     top: -10px;
     color: #3b1895;
     background: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .input-box input[type="submit"]:hover {
@@ -418,12 +451,15 @@ a{
 
 .input-box input[type="submit"] {
     color: #fff;
-    background: #3b1895;
+    background: black;
     padding-left: 0;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 1.125rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 20%;
+    font-family: 'FuturaPTMedium';
+    border: none;
+
 }
 
 .modal-close {
