@@ -38,9 +38,14 @@ input:focus{
     font-family: 'FuturaPTMedium';
 }
 
-.envoyer{
-    background-color: white;
-    border: none;
+.carte{
+    width: 300px;
+    height: 500px;
+    border: black solid;
+}
+
+.afficheMetier{
+    border: solid black;
 }
 
 /* Fonts */
