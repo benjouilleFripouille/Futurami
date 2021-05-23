@@ -52,7 +52,7 @@
 
         <!-- Section Métier-dex -->
         <section class="MetierDex1" id="metierDex">
-            <h1 class="titreMetier"><a href="#"> Métier-dex </a></h1>
+            <h1 class="titreMetier"><a href="./MetierDex/barreRech.php"> Métier-dex </a></h1>
             <img src="./Img/Nuages/Blanc/Nuage1.png" alt="" class="B1">
             <img src="./Img/Nuages/Blanc/Nuage2.png" alt="" class="B2_bis">
             <img src="./Img/Nuages/Blanc/Nuage2.png" alt="" class="B2_bis">
