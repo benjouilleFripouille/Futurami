@@ -509,12 +509,12 @@ form{
 }
 
 .t1{
-    /* transform: rotateZ(46deg); */
+    transform: rotateZ(46deg);
     width: 35px;
 }
 
 .t2{
-    /* transform: rotate(-45deg); */
+    transform: rotate(-45deg);
     width: 35px;
 }
 
