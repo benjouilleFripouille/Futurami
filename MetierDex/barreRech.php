@@ -1,11 +1,9 @@
 <?php
-$link = new PDO('mysql:host=localhost;dbname=futurammi;', 'root', '', array
-(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-$alldomaine = $link->query('SELECT * FROM domaine ORDER BY id ASC');
-if(isset($_GET['s']) AND !empty($_GET['s'])){
-    $recherche = htmlspecialchars($_GET['s']);
-    $alldomaine = $link->query('SELECT nom FROM domaine WHERE nom LIKE "%'.
-$recherche.'%" ORDER BY nom ASC');
+try{
+    $bdd = new PDO('mysql:host=sqletud.u-pem.fr;dbname=mvelasco_db;', 'mvelasco','ka4wa7wow$', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+}
+catch(Exception $e){
+    die('Une erreur a été trouvé:' .$e->getMessage());
 }
 ?>
 
@@ -18,28 +16,34 @@ $recherche.'%" ORDER BY nom ASC');
     <link rel="stylesheet" href="style.css">
     <title>Métier-dex</title>
 </head>
-
 <body>
 
-<h1>Métier-dex</h1>
-
+    <h1> Métier-dex </h1>   
     <form method="GET">
-        <input type="search" name="s" placeholder="Rechercher un domaine ou un métier" class="barreRecherche">
+        <input type="search" name="s" placeholder="Rechercher un métier" class="barreRecherche">
     </form>
 
-         <!-- ?php --> 
-            <!-- // if($alldomaine->rowCount() > 0){ -->
-                <!-- // while($user = $alldomaine->fetch()){ -->
-                    <!-- // ?> -->
-                    <!-- <p>?= $user['nom']; ?></p> -->
-                    <!-- <!-- ?php -- -->
-                <!-- // } -->
-            <!-- // }else{ -->
-                <!-- // ?> -->
-                <!-- <p>Aucun domaine trouvé...</p> -->
-                <!-- ?php -->
-            <!-- // } -->
-        <!-- // ?> -->
+    <section class="afficheMetier">
+        <?php
+            if(isset($_GET['s']) AND !empty($_GET['s'])){
+                $recherche = htmlspecialchars($_GET['s']);
+                $rechercheTrouve = $bdd->prepare('SELECT nom FROM metier WHERE nom LIKE "%'.$recherche.'%"');
+                $rechercheTrouve -> execute();
+            
+
+            if($resultat = $rechercheTrouve -> fetch()){
+                    ?>
+                <div class="carte"><?= $resultat['nom'] ?></div>           
+                <?php
+                    
+            }else{ 
+                ?>
+                <p>Aucun métier trouvé...</p>
+                <?php
+             }
+            }
+                ?>
+    </section>
 
 </body>
 </html>
