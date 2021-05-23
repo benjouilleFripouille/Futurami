@@ -503,17 +503,19 @@ form{
 }
 
 .trait{
-    width: 100%;
-    height: 10%;
+    height: 15%;
     background: black;
+    transform-origin: center;
 }
 
 .t1{
-    transform: rotate(45deg);
+    /* transform: rotateZ(46deg); */
+    width: 35px;
 }
 
 .t2{
-    transform: rotate(-45deg);
+    /* transform: rotate(-45deg); */
+    width: 35px;
 }
 
 .modal-btn{
