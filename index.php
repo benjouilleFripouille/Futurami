@@ -119,6 +119,22 @@
                             <input type="submit" value="Envoyer">
                         </div>
                     </form>
+
+                    <?php
+
+                if (isset($_POST['mail']) && isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['objet']) && isset($_POST['message']) ) {
+
+                    $retour = mail('futurammichamps@gmail.com', $_POST['nom'], $_POST['prenom'], $_POST['message']);
+
+                    if($retour){
+                        echo '<script>alert("Message Envoyé !")</script>';
+                    }
+                    else{
+                        echo '<script>alert("Une erreur est survenue :(")</script>';
+                    }
+                }
+            ?>
+
                     <div class="modal-close">
                         <div class="trait t1"></div>
                         <div class="trait t2"></div>
