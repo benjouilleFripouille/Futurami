@@ -1,4 +1,7 @@
 /* Général */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -21,7 +24,7 @@ img {
     z-index: -9999;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
@@ -283,7 +286,7 @@ a{
 
 /* Formulaire */
 
-form{
+form {
     font-family: 'FuturaPTMedium';
 }
 
@@ -335,7 +338,7 @@ form{
 .input-box {
     height: 50px;
     width: 100%;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -350,51 +353,51 @@ form{
     transition: all 0.3s ease;
 }
 
-.nomPrenom{
+.nomPrenom {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-#nom{
+#nom {
     background: #80b3c7;
     width: 95%;
 }
 
-.input-box #nom:focus~label, 
-.input-box #nom:valid~label{
-    background:#80b3c7;
+.input-box #nom:focus~label,
+.input-box #nom:valid~label {
+    background: #80b3c7;
 }
 
-#prenom{
+#prenom {
     background: #80b3c7;
     width: 100%;
 }
 
-.input-box #prenom:focus~label, 
-.input-box #prenom:valid~label{
-    background:#80b3c7;
+.input-box #prenom:focus~label,
+.input-box #prenom:valid~label {
+    background: #80b3c7;
 }
 
-#mail{
+#mail {
     background: #b089e2;
 }
 
-.input-box #mail:focus~label, 
-.input-box #mail:valid~label{
-    background:#b089e2;
+.input-box #mail:focus~label,
+.input-box #mail:valid~label {
+    background: #b089e2;
 }
 
-#objet{
+#objet {
     background: #ffafaf;
 }
 
-.input-box #objet:focus~label, 
-.input-box #objet:valid~label{
+.input-box #objet:focus~label,
+.input-box #objet:valid~label {
     background: #ffafaf
 }
 
-#message{
+#message {
     background: #fff3d8;
 }
 
@@ -502,23 +505,23 @@ form{
     width: 2%;
 }
 
-.trait{
+.trait {
     height: 15%;
     background: black;
     transform-origin: center;
 }
 
-.t1{
+.t1 {
     transform: rotateZ(46deg);
     width: 35px;
 }
 
-.t2{
+.t2 {
     transform: rotate(-45deg);
     width: 35px;
 }
 
-.modal-btn{
+.modal-btn {
     position: fixed;
     z-index: 999;
     bottom: 3%;
@@ -527,7 +530,7 @@ form{
     height: auto;
 }
 
-.modal-btn:hover{
+.modal-btn:hover {
     animation: enveloppe 0.9s ease infinite alternate-reverse;
     cursor: pointer;
     transform: translateY(10px);
@@ -568,24 +571,25 @@ form{
 }
 
 @keyframes enveloppe {
-    0%{
+    0% {
         transform: rotateZ(-30deg);
     }
-    33%{
+
+    33% {
         transform: rotateZ(30deg);
     }
 
-    66%{
+    66% {
         transform: rotateZ(-30deg);
     }
 
-    100%{
+    100% {
         transform: rotateZ(0deg);
     }
-    
-    
-    
-    
+
+
+
+
 }
 
 /* Media Queries */
