@@ -10,6 +10,8 @@ menuIcon.addEventListener("click", function(){
 
 const card = document.querySelector('.card_inner');
 const card2 = document.querySelector('.card_inner2');
+const card3 = document.querySelector('.card_inner3');
+const card4 = document.querySelector('.card_inner4');
 
 card.addEventListener('click', function () {
     card.classList.toggle('is-flipped');
@@ -17,6 +19,14 @@ card.addEventListener('click', function () {
 
 card2.addEventListener('click', function () {
     card2.classList.toggle('is-flipped');
+});
+
+card3.addEventListener('click', function () {
+    card3.classList.toggle('is-flipped');
+});
+
+card4.addEventListener('click', function () {
+    card4.classList.toggle('is-flipped');
 });
 
 // Formulaire
