@@ -29,6 +29,18 @@ a {
     color: white;
 }
 
+/* ScrollBar */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF8A22), to(#fe4880));
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0, 0, 0, 0.25);
+  }
 
 /* Burger */
 
