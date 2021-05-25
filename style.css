@@ -232,8 +232,12 @@ a {
     width: 25%;
     height: 60%;
     border: solid black;
+    
 }
 
+.icon {
+    z-index: 12;
+}
 .defMMI {
     width: 30%;
 }
