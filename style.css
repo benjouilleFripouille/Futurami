@@ -524,6 +524,10 @@ form {
     width: 95%;
 }
 
+#nom:hover{
+    opacity: 0.7;
+}
+
 .input-box #nom:focus~label,
 .input-box #nom:valid~label {
     background: #80b3c7;
@@ -532,6 +536,10 @@ form {
 #prenom {
     background: #80b3c7;
     width: 100%;
+}
+
+#prenom:hover{
+    opacity: 0.7;
 }
 
 .input-box #prenom:focus~label,
@@ -543,6 +551,10 @@ form {
     background: #b089e2;
 }
 
+#mail:hover{
+    opacity: 0.7;
+}
+
 .input-box #mail:focus~label,
 .input-box #mail:valid~label {
     background: #b089e2;
@@ -552,6 +564,10 @@ form {
     background: #ffafaf;
 }
 
+#objet:hover{
+    opacity: 0.7;
+}
+
 .input-box #objet:focus~label,
 .input-box #objet:valid~label {
     background: #ffafaf
@@ -559,6 +575,10 @@ form {
 
 #message {
     background: #fff3d8;
+}
+
+#message:hover{
+    opacity: 0.6;
 }
 
 .input-box input:focus,
