@@ -374,7 +374,8 @@ a {
 
 .card_face-front h2 {
     color: #fff;
-    font-size: 32px;
+    font-size: 25px;
+    margin-bottom: 490px;margin-right: 50px;
 }
 
 .card_face-back {
