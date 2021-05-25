@@ -68,16 +68,11 @@
         <!-- Section BUT MMI -->
         <section class="BUTmmi" id="butMMI">
             <div class="logoBUT">
-                <img src="Img/but_mmi.png" alt="#" class="icon">
+                
             </div>
             <div class="defMMI">
                 <h2> Le BUT MMI </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem pariatur rem incidunt officia alias
-                    autem soluta fugiat id, nostrum voluptatibus, aperiam non error laborum! Deleniti harum similique
-                    est veniam voluptatibus necessitatibus autem dolorem fuga ea. Minima, nihil cumque dolore inventore
-                    officia unde, commodi recusandae odit dolorem non dicta ad dolores? Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Dolorum labore aliquam veritatis officia doloribus tenetur modi
-                    temporibus odio voluptatibus sequi.</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem pariatur rem incidunt officia alias autem soluta fugiat id, nostrum voluptatibus, aperiam non error laborum! Deleniti harum similique est veniam voluptatibus necessitatibus autem dolorem fuga ea. Minima, nihil cumque dolore inventore officia unde, commodi recusandae odit dolorem non dicta ad dolores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum labore aliquam veritatis officia doloribus tenetur modi temporibus odio voluptatibus sequi.</p>
             </div>
             <img src="./Img/Nuages/Noir/Nuage1.png" alt="" class="N1">
             <img src="./Img/Nuages/Noir/Nuage2.png" alt="" class="N2">
@@ -89,64 +84,49 @@
         <section class="nous" id="createurs">
             <h1 class="titreNous"> Qui sommes-nous ? </h1>
             <div class="containerNous">
-                <div class="card_inner">
-                    <div class="card_face card_face-front">
-                        <h2>Benjamin Laroche</h2>
-                 
-                    </div>
-                    <div class="card_face card_face-back">
-                        <div class="card_content">
-                            <div class="card_header">
-
-                            </div>
-                            <div class="card_body">
-                                <h3>Graphiste</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, explicabo cumque
-                                    delectus voluptatibus laboriosam praesentium id odit. Delectus amet, ipsa
-                                    praesentium ab numquam cum quaerat exercitationem officiis obcaecati ut vero!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="carte benj"></div>
+                <div class="carte jules"></div>
+                <div class="carte leo"></div>
+                <div class="carte marina"></div>
             </div>
         </section>
 
         <!-- Enveloppe -->
-        <img src="/Img/enveloppe.png" alt="" class="modal-btn">
-        <div class="modal-bg">
-            <div class="modal">
-                <h2>Contactez-nous !</h2>
-                <form method="post">
-                    <div class="nomPrenom">
-                        <div class="input-box">
-                            <input type="text" name="nom" id="nom" required><label for="nom">Nom*</label>
+            <img src="/Img/enveloppe.png" alt="" class="modal-btn">
+            <div class="modal-bg">
+                <div class="modal">
+                    <h2>Contactez-nous !</h2>
+                    <form method="post">
+                        <div class="nomPrenom">
+                            <div class="input-box">
+                                <input type="text" name="nom" id="nom" required><label for="nom">Nom*</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" name="prenom" id="prenom" required>
+                                <label for="prenom">Prénom*</label>
+                            </div>
                         </div>
                         <div class="input-box">
-                            <input type="text" name="prenom" id="prenom" required>
-                            <label for="prenom">Prénom*</label>
+                            <input type="text" name="mail" id="mail" required><label for="mail">E-mail*</label>
                         </div>
+                        <div class="input-box">
+                            <input type="text" name="objet" id="objet" required>
+                            <label for="prenom">Objet</label>
+                        </div>
+                        <div class="message-box">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Entrez votre message</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </form>
+                    <div class="modal-close">
+                        <div class="trait t1"></div>
+                        <div class="trait t2"></div>
                     </div>
-                    <div class="input-box">
-                        <input type="text" name="mail" id="mail" required><label for="mail">E-mail*</label>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" name="objet" id="objet" required>
-                        <label for="prenom">Objet</label>
-                    </div>
-                    <div class="message-box">
-                        <textarea id="message" name="message" required></textarea>
-                        <label for="message">Entrez votre message</label>
-                    </div>
-                    <div class="input-box">
-                        <input type="submit" value="Envoyer">
-                    </div>
-                </form>
-                <div class="modal-close">
-                    <div class="trait t1"></div>
-                    <div class="trait t2"></div>
                 </div>
             </div>
-        </div>
     </div>
 
     <script type="text/javascript" src="java.js"></script>

@@ -232,12 +232,12 @@ a {
     width: 25%;
     height: 60%;
     border: solid black;
+    background: url(Img/but_mmi.png);
+    background-size: cover;
     
 }
 
-.icon {
-    z-index: 12;
-}
+
 .defMMI {
     width: 30%;
 }
