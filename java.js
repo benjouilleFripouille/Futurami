@@ -9,9 +9,14 @@ menuIcon.addEventListener("click", function(){
 // Fip card
 
 const card = document.querySelector('.card_inner');
+const card2 = document.querySelector('.card_inner2');
 
 card.addEventListener('click', function () {
     card.classList.toggle('is-flipped');
+});
+
+card2.addEventListener('click', function () {
+    card2.classList.toggle('is-flipped');
 });
 
 // Formulaire
