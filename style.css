@@ -269,12 +269,6 @@ a {
     align-items: center;
 }
 
-/* .containerNous {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-} */
-
 .carte {
     width: 320px;
     height: 500px;
@@ -437,17 +431,6 @@ a {
     line-height: 1.5;
 }
 
-@keyframes card {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-25px);
-    }
-}
 
 /* Formulaire */
 
@@ -661,30 +644,32 @@ form {
 .modal-close {
     position: absolute;
     font-size: 1.5rem;
-    top: 40px;
-    right: 40px;
-    font-weight: bold;
+    top: 30px;
+    right: 30px;
     cursor: pointer;
-    /* border: black solid; */
-    height: 3%;
-    width: 2%;
+    height: 30px;
+    width: 30px;
+    opacity: 0.3;
 }
 
-.trait {
-    height: 15%;
-    background: black;
-    transform-origin: center;
-}
-
-.t1 {
-    transform: rotateZ(46deg);
-    width: 35px;
-}
-
-.t2 {
+.modal-close:hover {
+    opacity: 1;
+  }
+  .modal-close:before, .modal-close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .modal-close:before {
+    transform: rotate(45deg);
+  }
+  .modal-close:after {
     transform: rotate(-45deg);
-    width: 35px;
-}
+  }
+  
 
 .modal-btn {
     position: fixed;
@@ -756,6 +741,19 @@ form {
 
 
 }
+
+@keyframes card {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
 
 /* Media Queries */
 
