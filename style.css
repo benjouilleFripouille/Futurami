@@ -317,14 +317,7 @@ a {
 
 }
 
-.card_inner2 {
-    width: 320px;
-    height: 500px;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
+.card_inner {}
 
 .card_inner3 {
     width: 320px;
