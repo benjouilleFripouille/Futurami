@@ -371,11 +371,26 @@ a {
     box-shadow: 0px 3px 18px 3px rgba(255, 255, 255, 0.5);
 }
 
+.cardB {
+    background-image: url(Img/carte-front-B.png);
+}
+
+.cardM {
+    background-image: url(Img/carte-front-M.png);
+}
+
+.cardJ {
+
+}
+
+.cardL {
+
+}
+
 .card_face-front {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(Img/carte-front-B.png);
     background-position: center;
     background-size: cover;
 }
