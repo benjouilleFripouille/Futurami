@@ -238,7 +238,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 
@@ -248,7 +248,7 @@ a {
     height: 30vh;
     float: left;
 
-    
+
 }
 
 .defMMI {
@@ -259,7 +259,7 @@ a {
 
 }
 
-.defMMItext{
+.defMMItext {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,9 +392,13 @@ a {
     background-image: url(Img/carte-front-M.png);
 }
 
-.cardJ {}
+.cardJ {
+    background-image: url(Img/carte-front-J.png);
+}
 
-.cardL {}
+.cardL {
+    background-image: url(Img/carte-front-L.png);
+}
 
 .card_face-front {
     display: flex;
