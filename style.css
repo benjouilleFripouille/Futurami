@@ -238,20 +238,33 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
 }
 
-.logoBUT {
-    width: 25%;
-    height: 60%;
-    border: solid black;
-    background: url(Img/but_mmi.png);
-    background-size: cover;
 
+.defMMI #img-but {
+    position: relative;
+    width: auto;
+    height: 30vh;
+    float: left;
+
+    
 }
-
 
 .defMMI {
-    width: 30%;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.defMMItext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .N1 {
