@@ -29,6 +29,18 @@ a {
     color: white;
 }
 
+/* ScrollBar */
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF8A22), to(#fe4880));
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0, 0, 0, 0.25);
+}
 
 /* Burger */
 
@@ -372,11 +384,22 @@ a {
     box-shadow: 0px 3px 18px 3px rgba(255, 255, 255, 0.5);
 }
 
+.cardB {
+    background-image: url(Img/carte-front-B.png);
+}
+
+.cardM {
+    background-image: url(Img/carte-front-M.png);
+}
+
+.cardJ {}
+
+.cardL {}
+
 .card_face-front {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(Img/carte-front-B.png);
     background-position: center;
     background-size: cover;
 }
@@ -388,7 +411,8 @@ a {
 .card_face-front h2 {
     color: #fff;
     font-size: 25px;
-    margin-bottom: 490px;margin-right: 50px;
+    margin-bottom: 490px;
+    margin-right: 50px;
 }
 
 .card_face-back {
@@ -525,6 +549,10 @@ form {
     width: 95%;
 }
 
+#nom:hover {
+    opacity: 0.7;
+}
+
 .input-box #nom:focus~label,
 .input-box #nom:valid~label {
     background: #80b3c7;
@@ -533,6 +561,10 @@ form {
 #prenom {
     background: #80b3c7;
     width: 100%;
+}
+
+#prenom:hover {
+    opacity: 0.7;
 }
 
 .input-box #prenom:focus~label,
@@ -544,6 +576,10 @@ form {
     background: #b089e2;
 }
 
+#mail:hover {
+    opacity: 0.7;
+}
+
 .input-box #mail:focus~label,
 .input-box #mail:valid~label {
     background: #b089e2;
@@ -553,6 +589,10 @@ form {
     background: #ffafaf;
 }
 
+#objet:hover {
+    opacity: 0.7;
+}
+
 .input-box #objet:focus~label,
 .input-box #objet:valid~label {
     background: #ffafaf
@@ -560,6 +600,10 @@ form {
 
 #message {
     background: #fff3d8;
+}
+
+#message:hover {
+    opacity: 0.6;
 }
 
 .input-box input:focus,
@@ -667,22 +711,26 @@ form {
 
 .modal-close:hover {
     opacity: 1;
-  }
-  .modal-close:before, .modal-close:after {
+}
+
+.modal-close:before,
+.modal-close:after {
     position: absolute;
     left: 15px;
     content: ' ';
     height: 33px;
     width: 2px;
     background-color: #333;
-  }
-  .modal-close:before {
+}
+
+.modal-close:before {
     transform: rotate(45deg);
-  }
-  .modal-close:after {
+}
+
+.modal-close:after {
     transform: rotate(-45deg);
-  }
-  
+}
+
 
 .modal-btn {
     position: fixed;
