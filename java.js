@@ -45,7 +45,7 @@ modalClose.addEventListener('click', function () {
 
 $(document).ready(function(){
 
-    $(document).load()
+    $(document).load();
     
 
 })
