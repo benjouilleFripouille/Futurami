@@ -444,8 +444,26 @@ a {
     right: 0;
     bottom: 0;
     z-index: -1;
+}
+
+.M{
+    background-image: linear-gradient(to bottom left, #95BDD3, #EA756B, #F3942D 115%);
     border-radius: 0 0 50% 0;
-    background-image: linear-gradient(to bottom left, #ffce00, #fe4880 115%);
+}
+
+.L{
+    background-image: linear-gradient(to bottom left, #5263A7, #A98025, #2E1505 115%);
+    border-radius: 0 0 50% 0;
+}
+
+.J{
+    background-image: linear-gradient(to bottom left, #264CC8, #90F4F4, #110CFD 115%);
+    border-radius: 0 0 50% 0;
+}
+
+.B{
+    background-image: linear-gradient(to bottom left, #B7DFE2 10%, #68174D 60%, #481F57 90%);
+    border-radius: 0 0 50% 0;
 }
 
 .card_header h2 {
@@ -469,8 +487,9 @@ a {
 
 .card_body p {
     color: #212121;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    line-height: 1;
+    text-align: justify;
 }
 
 .card_body a {
