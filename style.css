@@ -472,6 +472,39 @@ a {
     line-height: 1.5;
 }
 
+.card_body a {
+    color: #000;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.effet::before,
+.effet::after {
+    content: '';
+    width: 40%;
+    height: 2px;
+    background-color: chocolate;
+    position: absolute;
+    left: 30px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.effet::after {
+    bottom: 8%;
+    transform-origin: right;
+}
+
+.effet::before {
+    top: 85%;
+    transform-origin: left;
+}
+
+.effet:hover::before,
+.effet:hover::after {
+    transform: scaleX(1);
+}
+
 
 /* Formulaire */
 
