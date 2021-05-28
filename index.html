@@ -7,6 +7,7 @@
     <meta name="description"
         content="Bienvenue sur FuturaMMI, le site d'information sur les métiers post-MMI qui vous aidera.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <title>FuturaMMI</title>
 </head>
@@ -45,14 +46,16 @@
 
         <!-- Section Accueil -->
         <section class="Accueil" id="accueil">
-            <h1 class="titreAccueil"> FuturaMMI </h1>
+            <h1 class="titreAccueil" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                FuturaMMI </h1>
             <img src="./Img/Nuages/Blanc/Nuage2.png" alt="" class="B2">
             <img src="./Img/Nuages/Blanc/Nuage3.png" alt="" class="B3">
         </section>
 
         <!-- Section Métier-dex -->
         <section class="MetierDex1" id="metierDex">
-            <h1 class="titreMetier"><a href="#"> Métier-dex </a></h1>
+            <h1 class="titreMetier" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out"><a
+                    href="#"> Métier-dex </a></h1>
             <img src="./Img/Nuages/Blanc/Nuage1.png" alt="" class="B1">
             <img src="./Img/Nuages/Blanc/Nuage2.png" alt="" class="B2_bis">
             <img src="./Img/Nuages/Blanc/Nuage2.png" alt="" class="B2_bis">
@@ -60,7 +63,8 @@
 
         <!-- Section Mini-jeu -->
         <section class="MiniJeu1" id="miniJeu">
-            <h1 class="titreJeu"><a href="#"> Mini-Jeu </a></h1>
+            <h1 class="titreJeu" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out"><a href="#">
+                    Mini-Jeu </a></h1>
             <img src="./Img/Nuages/Gris/Nuage1.png" alt="" class="G1">
             <img src="./Img/Nuages/Gris/Nuage2.png" alt="" class="G2">
         </section>
@@ -98,7 +102,7 @@
         <section class="nous" id="createurs">
             <h1 class="titreNous"> Qui sommes-nous ? </h1>
             <div class="containerNous">
-                <div class="card_inner">
+                <div class="card_inner" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <div class="card_face card_face-front cardB">
                         <h2>Benjamin Laroche</h2>
 
@@ -118,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card_inner2">
+                <div class="card_inner2" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200">
                     <div class="card_face card_face-front cardM">
                         <h2>Marina Velasco</h2>
 
@@ -137,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card_inner3">
+                <div class="card_inner3" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300">
                     <div class="card_face card_face-front cardJ">
                         <h2>Jules Mesnil</h2>
 
@@ -157,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card_inner4">
+                <div class="card_inner4" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400">
                     <div class="card_face card_face-front cardL">
                         <h2>Léo Ramdani</h2>
 
@@ -217,6 +221,10 @@
     </div>
 
     <script type="text/javascript" src="java.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
