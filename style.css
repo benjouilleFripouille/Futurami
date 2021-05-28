@@ -237,35 +237,25 @@ a {
 .BUTmmi {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-
-.defMMI #img-but {
-    position: relative;
-    width: auto;
-    height: 30vh;
-    float: left;
-
-
-}
-
-.defMMI {
-    width: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
+    border: black solid;
 
 }
 
-.defMMItext {
+.icon{
+    width: 20%;
+    display: inline-block;
+    border: black solid;
+}
+
+.texte {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+    max-width: 45%;
+    border: black solid;
 }
 
 .N1 {
