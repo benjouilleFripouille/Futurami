@@ -237,16 +237,19 @@ a {
 .BUTmmi {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    border: black solid;
-
 }
 
-.icon{
+.containerBut{
     width: 20%;
+    height: 60%;
+    animation: but 2s ease-in-out infinite alternate-reverse;
+}
+
+.imgBut{
+    width: 100%;
     display: inline-block;
-    border: black solid;
 }
 
 .texte {
@@ -254,8 +257,11 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 45%;
-    border: black solid;
+    max-width: 30%;
+}
+
+.texte h2{
+    font-size: 3rem;
 }
 
 .N1 {
@@ -854,6 +860,15 @@ form {
 
     50% {
         transform: translateY(-25px);
+    }
+}
+
+@keyframes but {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(20px);
     }
 }
 
