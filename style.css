@@ -295,15 +295,6 @@ a {
     align-items: center;
 }
 
-.carte {
-    width: 320px;
-    height: 500px;
-    border-radius: 10px;
-    background-color: black;
-    animation: legendaire 1s ease infinite alternate-reverse;
-    z-index: 12;
-}
-
 .titreNous {
     color: white;
     font-family: 'FuturaPTMedium';
@@ -322,34 +313,6 @@ a {
 }
 
 .card_inner {
-    width: 320px;
-    height: 500px;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-
-}
-
-.card_inner2 {
-    width: 320px;
-    height: 500px;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
-
-.card_inner3 {
-    width: 320px;
-    height: 500px;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
-
-.card_inner4 {
     width: 320px;
     height: 500px;
     transition: transform 1s;
@@ -457,7 +420,7 @@ a {
 }
 
 .J{
-    background-image: linear-gradient(to bottom left, #264CC8, #90F4F4, #110CFD 115%);
+    background-image: linear-gradient(to bottom left, #264CC8 10%, #90F4F4, #110CFD 115%);
     border-radius: 0 0 50% 0;
 }
 
@@ -513,6 +476,38 @@ a {
 .effet::after {
     bottom: 8%;
     transform-origin: right;
+}
+
+.eM::after{
+    background-color: #EA756B;
+}
+
+.eM::before{
+    background-color: #95BDD3;
+}
+
+.eJ::after{
+    background-color: #110CFD;
+}
+
+.eJ::before{
+    background-color: #90F4F4;
+}
+
+.eL::after::after{
+    background-color: #A98025;
+}
+
+.eL::before{
+    background-color: #5263A7;
+}
+
+.eB::after{
+    background-color: #68174D;
+}
+
+.eB::before{
+    background-color: #B7DFE2;
 }
 
 .effet::before {

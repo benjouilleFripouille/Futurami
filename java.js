@@ -12,10 +12,10 @@ menuIcon.addEventListener("click", function(){
 
 // Fip card
 
-const card = document.querySelector('.card_inner');
-const card2 = document.querySelector('.card_inner2');
-const card3 = document.querySelector('.card_inner3');
-const card4 = document.querySelector('.card_inner4');
+const card = document.querySelector('.ciB');
+const card2 = document.querySelector('.ciM');
+const card3 = document.querySelector('.ciJ');
+const card4 = document.querySelector('.ciL');
 
 card.addEventListener('click', function () {
     card.classList.toggle('is-flipped');
