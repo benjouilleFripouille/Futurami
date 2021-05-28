@@ -40,6 +40,8 @@ div.content {
     display: flex;
     max-width: 600px;
     margin: auto;
+    color: #000;
+    font-family: "FuturaPTMedium";
 }
 
 .titreAccueil {
