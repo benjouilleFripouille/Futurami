@@ -20,6 +20,7 @@ img {
     z-index: -9999;
 }
 
+
 .titreAccueil {
     font-family: 'FuturaPTBook';
     color: white;
@@ -35,6 +36,12 @@ img {
 .B3 {
     top: 60vh;
     right: 0;
+}
+
+.B4 {
+    top: 40vh;
+    left: -5vw;
+    width: 30vw;
 }
 
 @font-face {
