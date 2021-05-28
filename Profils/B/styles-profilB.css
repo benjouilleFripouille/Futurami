@@ -1,0 +1,54 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(2, 103, 143, 1), rgba(118, 120, 177, 1)70%);
+    overflow: hidden;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+
+}
+
+img {
+    width: 50vw;
+    position: absolute;
+    z-index: -9999;
+}
+
+.titreAccueil {
+    font-family: 'FuturaPTBook';
+    color: white;
+    font-size: 7rem;
+    margin-top: 10%;
+}
+
+.B2 {
+    top: 60vh;
+    left: -15vw;
+}
+
+.B3 {
+    top: 60vh;
+    right: 0;
+}
+
+@font-face {
+    font-family: 'FuturaPTMedium';
+    src: url("./FONTS/Futura_PT_Medium/FuturaPTMedium.woff") format("woff"),
+        url("./FONTS/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'FuturaPTBook';
+    src: url("./FONTS/Futura_PT_Book/FuturaPTBook.woff") format("woff"),
+        url("./FONTS/Futura_PT_Book/FuturaPTBook.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
