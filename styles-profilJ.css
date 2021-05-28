@@ -14,10 +14,22 @@ body {
     flex-direction: column;
 }
 
-img {
+.img {
     width: 50vw;
     position: absolute;
     z-index: -9999;
+}
+
+.divlogo {
+    display: flex;
+    margin: auto;
+}
+
+.logo {
+    width: 64px;
+    height: auto;
+    display: flex;
+    padding: 30px;
 }
 
 h1 {
