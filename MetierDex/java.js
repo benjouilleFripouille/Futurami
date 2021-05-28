@@ -1,1 +1,0 @@
-alert('gneuh gneuh ce fichier est vide, BAH PLUS MAINTENANT');

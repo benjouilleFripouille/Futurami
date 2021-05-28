@@ -1,0 +1,249 @@
+/* Général */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'FuturaPTMedium';
+
+    background: rgb(176,137,226);
+    background: linear-gradient(180deg, rgba(176,137,226,1) 26%, rgba(227,  171,229,1) 56%, rgba(255,175,175,1) 86%);
+}
+
+h1{
+    color: white;
+    font-size: 7rem;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 1.2rem;
+    max-width: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-right: 60px solid white;
+    border-bottom: 35px solid transparent;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+
+.triangle:hover{
+    animation: triangle 1s ease-in-out infinite alternate;
+}
+
+
+/* Bouton information */
+
+.titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.PI{
+    width: 20px;
+    margin-top: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 1s;
+}
+
+.modal{
+    position: relative;
+    background-color: #fff;
+    width: 30%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+.modal-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mText{
+    color: black;
+    margin-bottom: 12%;
+}
+
+.PI2{
+    width: 20%;
+    margin-top: 10%;
+}
+
+.modal-close{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    opacity: 0.3;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:before,
+.modal-close:after {
+    position: absolute;
+    border-radius: 5px;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.modal-close:before {
+    transform: rotate(45deg);
+}
+
+.modal-close:after {
+    transform: rotate(-45deg);
+}
+
+
+/* Barre de recherche */
+
+.barreRecherche{
+    width: 450px;
+    height: 45px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+    font-family: 'FuturaPTMedium';
+    background: rgb(255, 238, 238);
+
+}
+
+input:hover{
+    background: rgb(255, 238, 238);
+    transition: background 0.8s;
+}
+
+.envoyer{
+    background-color: white;
+    border: none;
+}
+
+input{
+    text-indent: 15px;
+}
+
+/* Les cartes */
+
+.afficheMetiers{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.carteMetier{
+    width: 210px;
+    height: 300px;
+    border: black solid;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.modal-bg2{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 1s;
+}
+
+.modal2{
+    position: relative;
+    background-color: #fff;
+    width: 30%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'FuturaPTMedium';
+    src: url("../FONTS/Futura_PT_Medium/FuturaPTMedium.woff") format("woff"),
+        url("../FONTS/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'FuturaPTBook';
+    src: url("../FONTS/Futura_PT_Book/FuturaPTBook.woff") format("woff"),
+        url("../FONTS/Futura_PT_Book/FuturaPTBook.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Keyframes */
+
+@keyframes triangle {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(40px);
+    }
+
+}
