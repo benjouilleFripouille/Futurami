@@ -316,7 +316,10 @@ a {
     position: relative;
 }
 
-.paillette {
+.pailletteB,
+.pailletteM,
+.pailletteJ,
+.pailletteL{
     position: absolute;
     width: 320px;
     height: 500px;
@@ -378,6 +381,7 @@ a {
     background-position: center;
     background-size: cover;
 }
+
 
 .card_face-front:hover {
     animation: card 2s ease-in-out infinite;
