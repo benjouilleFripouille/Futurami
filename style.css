@@ -367,6 +367,10 @@ a {
     background-size: cover;
 }
 
+.card_face-front:after {
+    background-image: url(./Img/);
+}
+
 .card_face-front:hover {
     animation: card 2s ease-in-out infinite;
 }
