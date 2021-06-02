@@ -297,7 +297,6 @@ a {
 }
 
 .containerNous {
-    /* margin: 100px auto 0; */
     width: 100%;
     height: 100%;
     perspective: 1000px;
@@ -344,19 +343,19 @@ a {
 }
 
 .cardB {
-    background-image: url(Img/carte-front-B.png);
+    background-image: url("Img/carte-front-B.png");
 }
 
 .cardM {
-    background-image: url(Img/carte-front-M.png);
+    background-image: url("Img/carte-front-M.png");
 }
 
 .cardJ {
-    background-image: url(Img/carte-front-J.png);
+    background-image: url("Img/carte-front-J.png");
 }
 
 .cardL {
-    background-image: url(Img/carte-front-L.png);
+    background-image: url("Img/carte-front-L.png");
 }
 
 .card_face-front {
@@ -747,7 +746,6 @@ form {
 
 .modal-close {
     position: absolute;
-    font-size: 1.5rem;
     top: 30px;
     right: 30px;
     cursor: pointer;
