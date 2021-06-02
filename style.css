@@ -240,13 +240,13 @@ a {
     align-items: center;
 }
 
-.containerBut{
+.containerBut {
     width: 20%;
     height: 60%;
     animation: but 2s ease-in-out infinite alternate-reverse;
 }
 
-.imgBut{
+.imgBut {
     width: 100%;
     display: inline-block;
 }
@@ -259,7 +259,7 @@ a {
     max-width: 30%;
 }
 
-.texte h2{
+.texte h2 {
     font-size: 3rem;
 }
 
@@ -315,6 +315,21 @@ a {
     position: relative;
 }
 
+.pailletteB,
+.pailletteM,
+.pailletteJ,
+.pailletteL{
+    position: absolute;
+    width: 320px;
+    height: 500px;
+    background-image: url(./Img/sparkles.gif);
+    background-position: center;
+    background-size: 180%;
+    mix-blend-mode: color-dodge;
+    opacity: 1;
+    z-index: 12;
+}
+
 .card_inner.is-flipped {
     transform: rotateY(180deg);
 }
@@ -366,6 +381,7 @@ a {
     background-size: cover;
 }
 
+
 .card_face-front:hover {
     animation: card 2s ease-in-out infinite;
 }
@@ -403,22 +419,22 @@ a {
     z-index: -1;
 }
 
-.M{
+.M {
     background-image: linear-gradient(to bottom left, #95BDD3, #EA756B, #F3942D 115%);
     border-radius: 0 0 50% 0;
 }
 
-.L{
+.L {
     background-image: linear-gradient(to bottom left, #5263A7, #A98025, #2E1505 115%);
     border-radius: 0 0 50% 0;
 }
 
-.J{
+.J {
     background-image: linear-gradient(to bottom left, #264CC8 10%, #90F4F4, #110CFD 115%);
     border-radius: 0 0 50% 0;
 }
 
-.B{
+.B {
     background-image: linear-gradient(to bottom left, #B7DFE2 10%, #68174D 60%, #481F57 90%);
     border-radius: 0 0 50% 0;
 }
@@ -472,35 +488,35 @@ a {
     transform-origin: right;
 }
 
-.eM::after{
+.eM::after {
     background-color: #EA756B;
 }
 
-.eM::before{
+.eM::before {
     background-color: #95BDD3;
 }
 
-.eJ::after{
+.eJ::after {
     background-color: #110CFD;
 }
 
-.eJ::before{
+.eJ::before {
     background-color: #90F4F4;
 }
 
-.eL::after::after{
+.eL::after::after {
     background-color: #A98025;
 }
 
-.eL::before{
+.eL::before {
     background-color: #5263A7;
 }
 
-.eB::after{
+.eB::after {
     background-color: #68174D;
 }
 
-.eB::before{
+.eB::before {
     background-color: #B7DFE2;
 }
 
@@ -861,10 +877,11 @@ form {
 }
 
 @keyframes but {
-    from{
+    from {
         transform: translateY(0);
     }
-    to{
+
+    to {
         transform: translateY(20px);
     }
 }
