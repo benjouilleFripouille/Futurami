@@ -71,8 +71,9 @@ div.content {
 
 @font-face {
     font-family: 'FuturaPTMedium';
-    src: url("./FONTS/Futura_PT_Medium/FuturaPTMedium.woff") format("woff"),
-        url("./FONTS/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2");
+    src: url("../FONTS/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2"),
+        url("../FONTS/Futura_PT_Medium/FuturaPTMedium.woff") format("woff");
+
     font-style: normal;
     font-weight: medium;
 }
