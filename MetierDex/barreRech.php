@@ -1,7 +1,6 @@
 <?php
 try{
     //$bdd = new PDO('mysql:host=sqletud.u-pem.fr;dbname=mvelasco_db;', 'mvelasco','ka4wa7wow$', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-
     $bdd = new PDO('mysql:host=localhost;dbname=futurammi;', 'root','', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 }
 catch(Exception $e){
@@ -51,19 +50,12 @@ catch(Exception $e){
                 $recherche = htmlspecialchars($_GET['s']);
                 $rechercheTrouve = $bdd->prepare('SELECT * FROM metier WHERE nom LIKE "%'.$recherche.'%"');
                 $rechercheTrouve -> execute();
-                
             }
 
             if(isset($rechercheTrouve) AND $rechercheTrouve->rowCount() > 0){
                 while($resultat = $rechercheTrouve->fetch()){
                     ?>
                 <div class="carteMetier"><?= $resultat['nom'] ?></div>   
-                <!-- <script> -->
-                    <!-- function grandeCarte(){ -->
-                        <!-- console.log("carte cliquée"); -->
-                        <!-- $('.modal-bg2').classList.add('modal-active'); -->
-                    <!-- } -->
-                <!-- </script>      -->
                 <?php
                 }
             }else{ 

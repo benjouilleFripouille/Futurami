@@ -205,6 +205,11 @@ input{
     transition: visibility 0s opacity 1s;
 }
 
+.modal-active2{
+    visibility: visible;
+    opacity: 1;
+}
+
 .modal2{
     position: relative;
     background-color: #fff;

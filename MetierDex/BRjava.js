@@ -15,19 +15,6 @@ $(document).ready(function(){
     modalclose.addEventListener('click', function(){
         modalbg.classList.remove('modal-active');
     });
-
-
-    // Cartes(problèmes)
-    var modalbg2 = document.querySelector('.modal-bg2');
-    var carte = document.querySelector('.carteMetier');
-
-    if(carte){
-
-    carte.addEventListener('click', function(){
-        console.log("carte cliquée");
-        modalbg2.classList.add('modal-active');
-    });
-}
    
 })
 
@@ -35,3 +22,11 @@ $(document).ready(function(){
 
 
 
+    // Cartes(problèmes)
+    var modalbg2 = document.querySelector('.modal-bg2');
+
+
+    $('.carteMetier').on('click', function(){
+        console.log("carte cliquée");
+        $('.modal-bg2').addClass('modal-active2');
+    });
