@@ -4,7 +4,7 @@ body {
     padding: 0;
     height: 100vh;
     background: linear-gradient(180deg, rgba(227, 171, 229, 1), rgba(255, 175, 175, 1)70%);
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
 }
 
@@ -63,42 +63,45 @@ h1{
     position: absolute;
     width: 25%;
     z-index: -3;
-    left: 7%;
-    top: 18%;
+    left: 13%;
+    top: 15%;
 }
 
 .img {
-    width: 200px;
     position: absolute;
     z-index: -2;
 
 }
 
 .B2 {
-    /* top: 70%; */
-    /* left: -15%; */
+    top: 50%;
+    left: -15%;
+    width: 60%;
 }
 
 .B3 {
-    /* top: 50%; */
-    /* right: -10%; */
+    top: -40%;
+    right: 0;
+    width: 60%;
 }
 
 .B4 {
-    /* top: 40%; */
-    /* left: -20%; */
-    /* width: 40%; */
+    top: -20%;
+    left: -20%;
+    width: 60%;
 }
 
 .B5 {
-    /* top: -50%; */
-    /* right: -15%; */
+    top: 30%;
+    right: 0;
+    width: 60%;
 
 }
 
 .B6 {
-    /* top: -40%; */
-    /* left: -20%; */
+    top: 29%;
+    left: -31%;
+    width: 60%;
 }
 
 @font-face {
