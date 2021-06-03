@@ -23,7 +23,7 @@ catch(Exception $e){
 
 <!-- Titre -->
     <div class="titre">
-        <h1> Métier-dex </h1>
+        <h1 class="titreMetierDex"> Métier-dex </h1>
         <img src="../Img/PI.png" class="PI">
     </div>
 
@@ -55,18 +55,29 @@ catch(Exception $e){
             if(isset($rechercheTrouve) AND $rechercheTrouve->rowCount() > 0){
                 while($resultat = $rechercheTrouve->fetch()){
                     ?>
-                <div class="carteMetier"><?= $resultat['nom'] ?></div>   
+                <a href="#" data-id='<?php echo $resultat['id']?>' data-target="#modal" class="parceQue"><div class="carteMetier">
+                    <h3><?= $resultat['nom'] ?></h3>
+                    <p class="intro1">
+                        <?= $resultat['introduction'] ?>
+                    </p>
+                </div></a> 
                 <?php
                 }
             }else{ 
                 ?>
-                <p>Aucun métier trouvé...</p>
+                <p class="noMetier"> Aucun métier trouvé... </p>
                 <?php
              }
+            $bdd = null;
                 ?>
 
-    <div class="modal-bg2">
-        <div class="modal2"></div>
+    <div class="modal-bg2" id="modal" role="dialog">
+        <div class="modal2">
+            <div class="modalContent" id="load_data">
+
+            </div>
+
+        </div>
     </div>  
 
 

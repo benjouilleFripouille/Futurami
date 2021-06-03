@@ -19,14 +19,29 @@ $(document).ready(function(){
 })
 
 
-
-
-
-    // Cartes(problèmes)
-    var modalbg2 = document.querySelector('.modal-bg2');
-
+// Cartes
 
     $('.carteMetier').on('click', function(){
         console.log("carte cliquée");
         $('.modal-bg2').addClass('modal-active2');
     });
+
+    $('.modal-close2').on('click', function(){
+        $('.modal-bg2').removeClass('modal-active2');
+    });
+
+
+    $(document).ready(function(){
+        $(".parceQue").on("click", function(){
+            var ids = $(this).data('id');
+             $.ajax({
+                 url:"upload.php",
+                 method:'POST',
+                 data:{id:ids},
+                 success:function(data){
+                     $('#load_data').html(data);
+                 }
+             })
+        })
+
+})
