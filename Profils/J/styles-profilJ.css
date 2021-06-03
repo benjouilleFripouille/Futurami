@@ -17,7 +17,14 @@ body {
 .img {
     width: 50vw;
     position: absolute;
-    z-index: -9999;
+    z-index: -2;
+}
+
+.portrait {
+    position: absolute;
+    width: 25vw;
+    z-index: -3;
+    left: ;
 }
 
 .divlogo {
@@ -65,7 +72,7 @@ div.content {
 
 .B4 {
     top: 40vh;
-    left: -5vw;
+    left: -10vw;
     width: 30vw;
 }
 
