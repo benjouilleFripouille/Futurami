@@ -9,27 +9,48 @@ body {
 }
 
 .section {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+}
+
+.page {
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1440px;
+    margin: 0;
+    position: relative;
 }
 
 .img {
     width: 50vw;
     position: absolute;
-    z-index: -9999;
+    z-index: -2;
+
+}
+
+.portrait {
+    position: absolute;
+    width: 25%;
+    z-index: -3;
+    left: 7%;
+    top: 18%;
 }
 
 .divlogo {
+    position: relative;
+    width: 100%;
     display: flex;
-    margin: auto;
+    justify-content: center;
 }
 
 .logo {
     width: 64px;
     height: auto;
-    display: flex;
     padding: 30px;
+
 }
 
 h1 {
@@ -54,25 +75,36 @@ div.content {
 }
 
 .B2 {
-    top: 60vh;
-    left: -15vw;
+    top: 70%;
+    left: -15%;
 }
 
 .B3 {
-    top: 60vh;
-    right: 0;
+    top: 50%;
+    right: -10%;
 }
 
 .B4 {
-    top: 40vh;
-    left: -5vw;
-    width: 30vw;
+    top: 40%;
+    left: -20%;
+    width: 40%;
+}
+
+.B5 {
+    top: -50%;
+    right: -15%;
+
+}
+
+.B6 {
+    top: -40%;
+    left: -20%;
 }
 
 @font-face {
     font-family: 'FuturaPTMedium';
-    src: url("../FONTS/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2"),
-        url("../FONTS/Futura_PT_Medium/FuturaPTMedium.woff") format("woff");
+    src: url("../../FONTS/Futura_PT_Medium/FuturaPTMedium.woff2") format("woff2"),
+        url("../../FONTS/Futura_PT_Medium/FuturaPTMedium.woff") format("woff");
 
     font-style: normal;
     font-weight: medium;
@@ -80,8 +112,8 @@ div.content {
 
 @font-face {
     font-family: 'FuturaPTBook';
-    src: url("./FONTS/Futura_PT_Book/FuturaPTBook.woff") format("woff"),
-        url("./FONTS/Futura_PT_Book/FuturaPTBook.woff2") format("woff2");
+    src: url("../../FONTS/Futura_PT_Book/FuturaPTBook.woff2") format("woff2"),
+        url("../../FONTS/Futura_PT_Book/FuturaPTBook.woff") format("woff");
     font-style: normal;
     font-weight: normal;
 }
