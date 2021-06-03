@@ -17,7 +17,7 @@ section {
     box-sizing: border-box;
 }
 
-img {
+.nuage {
     width: 50vw;
     position: absolute;
     z-index: -9999;
@@ -32,7 +32,6 @@ a {
 
 ::-webkit-scrollbar {
     width: 12px;
-    background: white;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -158,10 +157,9 @@ a {
 }
 
 .titreAccueil {
-    font-family: 'FuturaPTBook';
-    color: white;
-    font-size: 7rem;
-    margin-top: 10%;
+    /* margin-top: -5%; */
+    width: 50%;
+    height: 80%;
 }
 
 .B2 {
