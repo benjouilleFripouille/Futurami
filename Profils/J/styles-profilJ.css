@@ -24,7 +24,8 @@ body {
     position: absolute;
     width: 25vw;
     z-index: -3;
-    left: ;
+    left: 120px;
+    bottom: 80px;
 }
 
 .divlogo {
@@ -72,8 +73,8 @@ div.content {
 
 .B4 {
     top: 40vh;
-    left: -10vw;
-    width: 30vw;
+    left: -20vw;
+    width: 40vw;
 }
 
 @font-face {
