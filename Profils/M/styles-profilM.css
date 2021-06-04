@@ -61,10 +61,10 @@ h1{
 
 .portrait {
     position: absolute;
-    width: 30%;
+    width: 25%;
     z-index: -3;
     right: 0%;
-    bottom: 5%;
+    bottom: 10%;
 }
 
 .img {
