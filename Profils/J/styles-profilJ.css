@@ -61,10 +61,10 @@ h1{
 
 .portrait {
     position: absolute;
-    width: 25%;
+    width: 30%;
     z-index: -3;
-    left: 13%;
-    top: 15%;
+    left: 5%;
+    top: 0%;
 }
 
 .img {
@@ -99,8 +99,8 @@ h1{
 }
 
 .B6 {
-    top: 29%;
-    left: -31%;
+    top: 20%;
+    left: -38%;
     width: 60%;
 }
 
