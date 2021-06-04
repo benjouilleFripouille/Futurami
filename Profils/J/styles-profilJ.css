@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(180deg, rgba(227, 171, 229, 1), rgba(255, 175, 175, 1)70%);
+    background: linear-gradient(180deg, rgba(227, 171, 229, 1), rgba(255, 132, 110, 1)70%);
     overflow: hidden;
     position: relative;
 }
@@ -64,7 +64,7 @@ h1{
     width: 30%;
     z-index: -3;
     left: 5%;
-    top: 0%;
+    top: 5%;
 }
 
 .img {
@@ -74,7 +74,7 @@ h1{
 }
 
 .B2 {
-    top: 50%;
+    top: 60%;
     left: -15%;
     width: 60%;
 }
@@ -92,7 +92,7 @@ h1{
 }
 
 .B5 {
-    top: 30%;
+    top: 40%;
     right: 0;
     width: 60%;
 
