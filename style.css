@@ -31,13 +31,23 @@ a {
 /* ScrollBar */
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 13px;
+    height: 13px;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 30px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF8A22), to(#fe4880));
-    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(13deg, #f9d4ff 14%, #c7ceff 64%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(13deg, #c7ceff 14%, #f9d4ff 64%);
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
 }
 
 /* Burger */
@@ -125,7 +135,7 @@ a {
     content: '';
     width: 100%;
     height: 2px;
-    background-color: chocolate;
+    background-color: #FFAFAF;
     position: absolute;
     left: 0;
     transform: scaleX(0);
@@ -157,9 +167,9 @@ a {
 }
 
 .titreAccueil {
-    /* margin-top: -5%; */
-    width: 50%;
-    height: 80%;
+    margin-top: 5%;
+    width: 800px;
+    height: 500px;
 }
 
 .B2 {
@@ -184,7 +194,7 @@ a {
 .titreMetier {
     font-family: 'FuturaPTBook';
     color: white;
-    font-size: 7rem;
+    font-size: 9rem;
 }
 
 .B2_bis {
@@ -214,7 +224,105 @@ a {
 .titreJeu {
     font-family: 'FuturaPTBook';
     color: white;
-    font-size: 7rem;
+    font-size: 9rem;
+    cursor: pointer;
+}
+
+h1.effet-shine:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+    color: #fff;
+  }
+  
+
+.anime {
+    background: linear-gradient(to right, #fff 50%, #000 50%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
+}
+
+.anime:hover {
+    background-position: -100%;
+}
+
+.modal-bg2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    z-index: 40;
+}
+
+.bg-active2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal2 {
+    position: relative;
+    background-color: #fff;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    z-index: 40;
+    border-radius: 40px;
+}
+
+.modal2 img {
+    width: 30%;
+    animation: mascotte 3s ease infinite alternate-reverse;
+}
+
+.modal2 p {
+    font-size: 2rem;
+    max-width: 50%;
+}
+
+.modal-close2 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    opacity: 0.3;
+}
+
+.modal-close2:hover {
+    opacity: 1;
+}
+
+.modal-close2:before,
+.modal-close2:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.modal-close2:before {
+    transform: rotate(45deg);
+}
+
+.modal-close2:after {
+    transform: rotate(-45deg);
 }
 
 .G1 {
@@ -254,7 +362,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 30%;
+    max-width: 35%;
+    font-size: 1.2rem;
 }
 
 .texte h2 {
@@ -857,9 +966,6 @@ form {
         transform: rotateZ(0deg);
     }
 
-
-
-
 }
 
 @keyframes card {
@@ -883,6 +989,35 @@ form {
         transform: translateY(20px);
     }
 }
+
+@keyframes mascotte {
+    0% {
+        transform: rotateZ(-0deg);
+    }
+
+    33% {
+        transform: rotateZ(15deg);
+    }
+
+    66% {
+        transform: rotateZ(-5deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+
+}
+
+@-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
 
 
 /* Media Queries */
