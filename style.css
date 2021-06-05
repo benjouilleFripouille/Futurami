@@ -197,7 +197,7 @@ a {
 }
 
 .B2 {
-    top: 60vh;
+    top: 75vh;
     left: -15vw;
 }
 
@@ -206,7 +206,7 @@ a {
     right: 0;
 }
 
-.containMascotte{
+.containMascotte1{
     position: absolute;
     top: 1%;
     left: 1%;
@@ -214,14 +214,14 @@ a {
     flex-direction: row;
 }
 
-.mascotte{
+.mascotte1{
     width: 15%;
     cursor: pointer;
     display: flex;
     flex-direction: row;
 }
 
-.infoModal{
+.infoModal1{
     width: 380px;
     height: 210px;
     border-radius: 7px;
@@ -237,12 +237,12 @@ a {
     transition: all 0.8s ease-in-out;
 }
 
-.containMascotte:hover > .infoModal{
+.containMascotte1:hover > .infoModal1{
     visibility: visible;
     opacity: 1;
 }
 
-.infoModal::after{
+.infoModal1::after{
     right: 100%;
 	top: 20%;
 	border: solid transparent;
@@ -257,7 +257,7 @@ a {
 	/* margin-top: -35px; */
 }
 
-.textModalInfo{
+.textModalInfo1{
     width: 100%;
     /* height: 100%; */
     /* border: solid black; */
@@ -266,7 +266,7 @@ a {
     padding: 10px;
 }
 
-.textModalInfo span{
+.textModalInfo1 span{
     font-weight: bold;
 }
 
@@ -278,6 +278,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .titreMetier {
@@ -287,19 +288,80 @@ a {
 }
 
 .B2_bis {
-    top: 155vh;
-    left: -15vw;
-}
-
-.B2_bis {
-    top: 175vh;
+    top: 70vh;
     left: -15vw;
 }
 
 .B1 {
-    top: 155vh;
+    top: 55vh;
     right: 0;
 }
+
+.containMascotte2{
+    position: absolute;
+    top: 60%;
+    right: 1%;
+    /* z-index: -9999; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mascotte2{
+    width: 15%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.infoModal2{
+    width: 380px;
+    height: 210px;
+    border-radius: 7px;
+    background: white;
+    position: absolute;
+    /* z-index: 9999; */
+    right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.containMascotte2:hover > .infoModal2{
+    visibility: visible;
+    opacity: 1;
+}
+
+.infoModal2::after{
+    left: 100%;
+	top: 20%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #fff;
+	border-width: 35px;
+	/* margin-top: -35px; */
+}
+
+.textModalInfo2{
+    width: 100%;
+    /* height: 100%; */
+    /* border: solid black; */
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.textModalInfo2 span{
+    font-weight: bold;
+}
+
 
 
 /* Section Mini-Jeu */
