@@ -225,6 +225,20 @@ a {
     font-family: 'FuturaPTBook';
     color: white;
     font-size: 7rem;
+    cursor: pointer;
+}
+
+.anime {
+    background: linear-gradient(to right, #fff 50%, #000 50%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
+}
+
+.anime:hover {
+    background-position: -100%;
 }
 
 .modal-bg2 {
@@ -237,24 +251,70 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    z-index: 40;
+}
+
+.bg-active2 {
+    visibility: visible;
+    opacity: 1;
 }
 
 .modal2 {
+    position: relative;
     background-color: #fff;
     width: 40%;
     height: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+    z-index: 40;
+    border-radius: 40px;
 }
 
 .modal2 img {
-    width: 50%;
+    width: 30%;
+    animation: mascotte 3s ease infinite alternate-reverse;
 }
 
 .modal2 p {
+    font-size: 2rem;
+    max-width: 50%;
+}
 
+.modal-close2 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    opacity: 0.3;
+}
+
+.modal-close2:hover {
+    opacity: 1;
+}
+
+.modal-close2:before,
+.modal-close2:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.modal-close2:before {
+    transform: rotate(45deg);
+}
+
+.modal-close2:after {
+    transform: rotate(-45deg);
 }
 
 .G1 {
@@ -897,9 +957,6 @@ form {
         transform: rotateZ(0deg);
     }
 
-
-
-
 }
 
 @keyframes card {
@@ -924,6 +981,24 @@ form {
     }
 }
 
+@keyframes mascotte {
+    0% {
+        transform: rotateZ(-0deg);
+    }
+
+    33% {
+        transform: rotateZ(15deg);
+    }
+
+    66% {
+        transform: rotateZ(-5deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+
+}
 
 /* Media Queries */
 

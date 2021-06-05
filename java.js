@@ -9,6 +9,20 @@ menuIcon.addEventListener("click", function(){
     navbar.classList.toggle("change");
 });
 
+// Modal Mini-jeu
+
+var modalBtn2 = document.querySelector('.modal-btn2');
+var modalBg2 = document.querySelector('.modal-bg2');
+var modalClose2 = document.querySelector('.modal-close2');
+
+
+modalBtn2.addEventListener('click', function () {
+    modalBg2.classList.add('bg-active2');
+});
+
+modalClose2.addEventListener('click', function () {
+    modalBg2.classList.remove('bg-active2');
+});
 
 // Fip card
 
