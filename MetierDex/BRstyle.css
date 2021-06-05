@@ -211,6 +211,7 @@ input{
     font-size: .950rem;
     padding-left: 30px;
     padding-top: 12px;
+    max-width: 200px;
     margin: 0;
     color: black;
 }
@@ -250,13 +251,17 @@ input{
     position: relative;
     background-color: #fff;
     width: 80%;
-    max-height: 98%;
+    max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 40px;
-    overflow: auto;
+    overflow-y: scroll;
+}
+
+body.modal-open{
+    overflow: hidden;
 }
 
 .modalContent{
@@ -293,7 +298,6 @@ input{
 .Pintro2{
     text-align: center;
 }
-
 
 .modal-close2{
     position: absolute;

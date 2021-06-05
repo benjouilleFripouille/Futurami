@@ -67,6 +67,8 @@ $('.card_backL').on('click', function () {
     $('.pailletteL').css('visibility', 'visible');
 })
 });
+
+
 // Formulaire
 
 var modalBtn = document.querySelector('.modal-btn');
