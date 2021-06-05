@@ -234,15 +234,6 @@ h1.effect-shine:hover {
     animation: shine 2s infinite;
   }
   
-  @-webkit-keyframes shine {
-    from {
-      -webkit-mask-position: 150%;
-    }
-    
-    to {
-      -webkit-mask-position: -50%;
-    }
-  }
 
 .anime {
     background: linear-gradient(to right, #fff 50%, #000 50%);
@@ -1016,6 +1007,16 @@ form {
     }
 
 }
+
+@-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
 
 
 /* Media Queries */
