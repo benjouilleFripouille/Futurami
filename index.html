@@ -7,6 +7,7 @@
     <meta name="description"
         content="Bienvenue sur FuturaMMI, le site d'information sur les métiers post-MMI qui vous aidera.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./Img/mascotte.png">
     <link rel="stylesheet" href="style.css">
     <script TYPE="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -27,19 +28,19 @@
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#accueil" class="nav-link">Accueil</a>
+                        <a href="#accueil" class="nav-link nlA">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#metierDex" class="nav-link">Métier-dex</a>
+                        <a href="#metierDex" class="nav-link nlMD">Métier-dex</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#miniJeu" class="nav-link">Mini-jeu</a>
+                        <a href="#miniJeu" class="nav-link nlMJ">Mini-jeu</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#butMMI" class="nav-link">Le BUT MMI</a>
+                        <a href="#butMMI" class="nav-link nlB">Le BUT MMI</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#createurs" class="nav-link">Les créateurs</a>
+                        <a href="#createurs" class="nav-link nlC">Les créateurs</a>
                     </li>
                 </ul>
             </nav>
@@ -47,6 +48,18 @@
 
         <!-- Section Accueil -->
         <section class="Accueil" id="accueil">
+
+            <div class="containMascotte">
+                <img src="./Img/mascotte.png" alt="Mascotte" class="mascotte">
+                <div class="infoModal">
+                    <p class="textModalInfo">
+                        Bonjour et bienvenue sur FuturaMMI !
+                        <br><br>
+                        Je m'appelle <span>Futura</span> et je suis la mascotte de ce projet. Retrouvez moi un peu partout sur le site pour en savoir plus sur ce qui vous attend dans cette aventure...
+                    </p>
+                </div>
+            </div>
+
             <img src="./Img/logo.png" alt="Logo de notre site FuturaMMI centré sur la page d'accueil"
                 class="titreAccueil" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-in-out">
             <img src="./Img/Nuages/Blanc/Nuage2.png" alt="Nuage blanc de type 2" class="nuage B2">
@@ -55,8 +68,7 @@
 
         <!-- Section Métier-dex -->
         <section class="MetierDex1" id="metierDex">
-            <h1 class="titreMetier effet-shine" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-in-out"><a
-                    href="MetierDex/barreRech.php"> Métier-dex </a></h1>
+            <h1 class="titreMetier effet-shine" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease-in-out"><a href="MetierDex/barreRech.php"> Métier-dex </a></h1>
             <img src="./Img/Nuages/Blanc/Nuage1.png" alt="Nuage blanc de type 1" class="nuage B1">
             <img src="./Img/Nuages/Blanc/Nuage2.png" alt="Nuage blanc de type 2" class="nuage B2_bis">
             <img src="./Img/Nuages/Blanc/Nuage2.png" alt="Nuage blanc de type 2" class="nuage B2_bis">
