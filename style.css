@@ -28,6 +28,11 @@ a {
     color: white;
 }
 
+span{
+    font-weight: bold;
+}
+
+
 /* ScrollBar */
 
 ::-webkit-scrollbar {
@@ -266,10 +271,6 @@ a {
     padding: 10px;
 }
 
-.textModalInfo1 span{
-    font-weight: bold;
-}
-
 
 
 /* Section Métier-dex */
@@ -356,10 +357,6 @@ a {
     text-align: center;
     font-size: 1.3rem;
     padding: 10px;
-}
-
-.textModalInfo2 span{
-    font-weight: bold;
 }
 
 
@@ -547,9 +544,6 @@ h1.effet-shine:hover {
     padding: 10px;
 }
 
-.textModalInfo3 span{
-    font-weight: bold;
-}
 
 
 
@@ -561,6 +555,7 @@ h1.effet-shine:hover {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
 }
 
 .containerBut {
@@ -596,17 +591,22 @@ h1.effet-shine:hover {
 }
 
 .N1 {
-    top: 365vh;
-    left: -10vw;
+    top: 63vh;
+    left: -7vw;
 }
 
 .N2 {
-    top: 365vh;
+    top: 65vh;
     right: 0;
 }
 
-.N3 {
-    top: 365vh;
+.N1_bis {
+    top: 60vh;
+    right: 26%;
+}
+
+.N3{
+    top: 72vh;
     right: 0;
 }
 
