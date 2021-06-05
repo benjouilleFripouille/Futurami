@@ -584,6 +584,7 @@ h1.effet-shine:hover {
 
 .texte p{
     text-align: justify;
+    position: relative;
 }
 
 .texte h2 {
@@ -609,6 +610,69 @@ h1.effet-shine:hover {
     top: 72vh;
     right: 0;
 }
+
+.containMascotte4{
+    position: absolute;
+    top: 42%;
+    left: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mascotte4{
+    width: 15%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    animation: but 2s ease-in-out infinite alternate-reverse;
+
+}
+
+.infoModal4{
+    width: 380px;
+    height: 210px;
+    border-radius: 7px;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    animation: but 2s ease-in-out infinite alternate-reverse;
+
+}
+
+.containMascotte4:hover > .infoModal4{
+    visibility: visible;
+    opacity: 1;
+}
+
+.infoModal4::after{
+    right: 100%;
+	top: 20%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: 35px;
+}
+
+.textModalInfo4{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+
 
 
 /* Section Nous (les créateurs) */
