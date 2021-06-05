@@ -70,7 +70,7 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 20% 0 0 40%;
-    transition: right .8s cubic-bezier(1, 0, 0, 1);
+    transition: right .6s ease-in-out;
 }
 
 .change {
@@ -135,11 +135,35 @@ a {
     content: '';
     width: 100%;
     height: 2px;
-    background-color: #FFAFAF;
     position: absolute;
     left: 0;
     transform: scaleX(0);
     transition: transform 0.5s;
+}
+
+.nlA::before,
+.nlA::after{
+    background: #126A94;
+}
+
+.nlMD::before,
+.nlMD::after{
+    background:#C094E3;
+}
+
+.nlMJ::before,
+.nlMJ::after{
+    background:#FFB7AF;
+}
+
+.nlB::before,
+.nlB::after{
+    background:#FEE4C3;
+}
+
+.nlC::before,
+.nlC::after{
+    background:#000;
 }
 
 .nav-link::after {
@@ -163,7 +187,7 @@ a {
 .Accueil {
     display: flex;
     justify-content: center;
-
+    position: relative;
 }
 
 .titreAccueil {
@@ -173,7 +197,7 @@ a {
 }
 
 .B2 {
-    top: 60vh;
+    top: 75vh;
     left: -15vw;
 }
 
@@ -182,6 +206,71 @@ a {
     right: 0;
 }
 
+.containMascotte1{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mascotte1{
+    width: 15%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.infoModal1{
+    width: 380px;
+    height: 210px;
+    border-radius: 7px;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.containMascotte1:hover > .infoModal1{
+    visibility: visible;
+    opacity: 1;
+}
+
+.infoModal1::after{
+    right: 100%;
+	top: 20%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: 35px;
+	/* margin-top: -35px; */
+}
+
+.textModalInfo1{
+    width: 100%;
+    /* height: 100%; */
+    /* border: solid black; */
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.textModalInfo1 span{
+    font-weight: bold;
+}
+
+
 
 /* Section Métier-dex */
 
@@ -189,6 +278,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .titreMetier {
@@ -198,19 +288,80 @@ a {
 }
 
 .B2_bis {
-    top: 155vh;
-    left: -15vw;
-}
-
-.B2_bis {
-    top: 175vh;
+    top: 70vh;
     left: -15vw;
 }
 
 .B1 {
-    top: 155vh;
+    top: 55vh;
     right: 0;
 }
+
+.containMascotte2{
+    position: absolute;
+    top: 60%;
+    right: 1%;
+    /* z-index: -9999; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mascotte2{
+    width: 15%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.infoModal2{
+    width: 380px;
+    height: 210px;
+    border-radius: 7px;
+    background: white;
+    position: absolute;
+    /* z-index: 9999; */
+    right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.containMascotte2:hover > .infoModal2{
+    visibility: visible;
+    opacity: 1;
+}
+
+.infoModal2::after{
+    left: 100%;
+	top: 20%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #fff;
+	border-width: 35px;
+	/* margin-top: -35px; */
+}
+
+.textModalInfo2{
+    width: 100%;
+    /* height: 100%; */
+    /* border: solid black; */
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.textModalInfo2 span{
+    font-weight: bold;
+}
+
 
 
 /* Section Mini-Jeu */
@@ -234,7 +385,6 @@ h1.effet-shine:hover {
     animation: shine 2s infinite;
     color: #fff;
 }
-
 
 .anime {
     background: linear-gradient(to right, #fff 50%, #000 50%);
@@ -364,6 +514,14 @@ h1.effet-shine:hover {
     align-items: center;
     max-width: 35%;
     font-size: 1.2rem;
+    background: white;
+    padding: 40px;
+    /* border: black solid; */
+    border-radius: 40px;
+}
+
+.texte p{
+    text-align: justify;
 }
 
 .texte h2 {
@@ -935,19 +1093,6 @@ form {
 }
 
 /* Keyframes */
-
-@keyframes legendaire {
-    from {
-        -webkit-box-shadow: 0px 0px 15px 10px #FF8A22;
-        box-shadow: 0px 0px 15px 10px #FF8A22;
-
-    }
-
-    to {
-        -webkit-box-shadow: 0px 0px 15px 0px #FF8A22;
-        box-shadow: 0px 0px 15px 0px #FF8A22;
-    }
-}
 
 @keyframes enveloppe {
     0% {

@@ -74,9 +74,8 @@ catch(Exception $e){
     <div class="modal-bg2" id="modal" role="dialog">
         <div class="modal2">
             <div class="modalContent" id="load_data">
-
             </div>
-
+                <div class="modal-close2"></div>
         </div>
     </div>  
 

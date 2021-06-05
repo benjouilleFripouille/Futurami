@@ -11,9 +11,8 @@ catch(Exception $e){
 $output='';
 $rec_id = $_POST['id'];
 
-// $sql = "SELECT * FROM metier WHERE id LIKE" .$rec_id;
 
-$resultat = $bdd->prepare('SELECT * FROM metier');
+$resultat = $bdd->prepare('SELECT * FROM metier WHERE id =' .$rec_id. ';');
 $resultat->execute();
 
 if($resultat){
@@ -48,9 +47,7 @@ if($resultat){
          <p class="modalP Pevol_poss">' .$modal["evolution_possible"]. '</p>
 
          <h3 class="autre"> Autre </h3>
-         <p class="modalP autre">' .$modal["autre"]. '</p>
-         
-         <div class="modal-close2"></div>';
+         <p class="modalP autre">' .$modal["autre"]. '</p>';
     }
 }
 

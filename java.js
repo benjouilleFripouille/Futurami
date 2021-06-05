@@ -1,7 +1,4 @@
-//$(document).ready(function(){
-
 // Burger
-
 const menuIcon = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector(".navbar");
 
@@ -9,8 +6,8 @@ menuIcon.addEventListener("click", function(){
     navbar.classList.toggle("change");
 });
 
-// Modal Mini-jeu
 
+// Modal Mini-jeu
 var modalBtn2 = document.querySelector('.modal-btn2');
 var modalBg2 = document.querySelector('.modal-bg2');
 var modalClose2 = document.querySelector('.modal-close2');
@@ -24,8 +21,9 @@ modalClose2.addEventListener('click', function () {
     modalBg2.classList.remove('bg-active2');
 });
 
-// Fip card
 
+
+// Fip card
 const card = document.querySelector('.ciB');
 const card2 = document.querySelector('.ciM');
 const card3 = document.querySelector('.ciJ');
@@ -46,6 +44,8 @@ card3.addEventListener('click', function () {
 card4.addEventListener('click', function () {
     card4.classList.toggle('is-flipped');
 });
+
+
 
 // Paillette 
 $(document).ready(function(){
@@ -81,6 +81,8 @@ $('.card_backL').on('click', function () {
     $('.pailletteL').css('visibility', 'visible');
 })
 });
+
+
 // Formulaire
 
 var modalBtn = document.querySelector('.modal-btn');

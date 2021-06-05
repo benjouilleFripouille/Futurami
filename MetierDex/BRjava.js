@@ -21,14 +21,16 @@ $(document).ready(function(){
 
 // Cartes
 
-    $('.carteMetier').on('click', function(){
-        console.log("carte cliquée");
-        $('.modal-bg2').addClass('modal-active2');
-    });
+$('.carteMetier').on('click', function(){
+    console.log("carte cliquée");
+    $('.modal-bg2').addClass('modal-active2');
+    $('body').addClass('modal-open');
+});
 
-    $('.modal-close2').on('click', function(){
-        $('.modal-bg2').removeClass('modal-active2');
-    });
+$('.modal-close2').on('click', function(){
+    $('.modal-bg2').removeClass('modal-active2');
+    $('body').removeClass('modal-open');
+});
 
 
     $(document).ready(function(){
@@ -43,5 +45,6 @@ $(document).ready(function(){
                  }
              })
         })
-
 })
+
+
