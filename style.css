@@ -962,7 +962,7 @@ h1.effet-shine:hover {
 }
 
 .mascotte5{
-    width: 15%;
+    width: 150px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -975,7 +975,7 @@ h1.effet-shine:hover {
     background: white;
     position: absolute;
     z-index: 999;
-    left: 20%;
+    left: 130%;
     display: flex;
     justify-content: center;
     align-items: center;
