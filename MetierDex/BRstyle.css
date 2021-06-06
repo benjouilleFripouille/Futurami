@@ -54,6 +54,8 @@ a{
     max-width: 500px;
 }
 
+
+
 /* Bouton information */
 
 .titre{
@@ -152,6 +154,7 @@ a{
 }
 
 
+
 /* Barre de recherche */
 
 .barreRecherche{
@@ -182,6 +185,8 @@ input:hover{
 input{
     text-indent: 15px;
 }
+
+
 
 /* Les cartes */
 
@@ -409,6 +414,7 @@ body.modal-open{
 }
 
 
+
 /* Fonts */
 
 @font-face {
@@ -426,6 +432,8 @@ body.modal-open{
     font-style: normal;
     font-weight: normal;
 }
+
+
 
 /* Keyframes */
 
