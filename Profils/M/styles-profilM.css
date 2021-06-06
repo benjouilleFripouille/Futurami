@@ -54,6 +54,7 @@ section {
     margin-bottom: 3%;
     color: #000;
     font-family: "FuturaPTMedium";
+    font-size: 1.3rem;
 }
 
 h1{
@@ -63,6 +64,7 @@ h1{
     color: white;
     font-size: 7rem;
     margin-top: 3%;
+    text-shadow: 1px 1px 0px #ffffff, 5px 4px 0px rgb(0, 0, 0, 15%);
 }
 
 .portrait {

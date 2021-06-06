@@ -1,9 +1,0 @@
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    font-family: 'FuturaPTMedium';
-
-    background: rgb(176,137,226);
-    background: linear-gradient(180deg, rgba(176,137,226,1) 26%, rgba(227,  171,229,1) 56%, rgba(255,175,175,1) 86%);
-}

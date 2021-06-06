@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     font-family: 'FuturaPTMedium';
 
@@ -52,6 +52,28 @@ a{
     color: white;
     font-size: 1.2rem;
     max-width: 500px;
+}
+
+/* ScrollBar */
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #f9d4ff 14%, #c7ceff 64%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(13deg, #c7ceff 14%, #f9d4ff 64%);
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
 }
 
 

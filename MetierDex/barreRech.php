@@ -56,7 +56,7 @@ catch(Exception $e){
             if(isset($rechercheTrouve) AND $rechercheTrouve->rowCount() > 0){
                 while($resultat = $rechercheTrouve->fetch()){
                     ?>
-                <a href="#" data-id='<?php echo $resultat['id']?>' data-target="#modal" class="parceQue"><div class="carteMetier" style="background-image: url('../Img/fond-carte/Dev/dev_graphisme.png')">
+                <a href="#" data-id='<?php echo $resultat['id']?>' data-target="#modal" class="parceQue"><div class="carteMetier" style="background-image: url('<?php echo $resultat['fond_carte']?>')">
                     <h3><?= $resultat['nom'] ?></h3>
                     <p class="intro1">
                         <?= $resultat['introduction'] ?>
