@@ -58,9 +58,9 @@ catch(Exception $e){
                     ?>
                 <a href="#" data-id='<?php echo $resultat['id']?>' data-target="#modal" class="parceQue"><div class="carteMetier" style="background-image: url('<?php echo $resultat['fond_carte']?>')">
                     <h3><?= $resultat['nom'] ?></h3>
-                    <p class="intro1">
-                        <?= $resultat['introduction'] ?>
-                    </p>
+                    <div class="intro1">
+                        <p class="textIntro1"><?= $resultat['introduction'] ?></p>
+                    </div>
                 </div></a> 
                 <?php
                 }
@@ -74,9 +74,8 @@ catch(Exception $e){
 
     <div class="modal-bg2" id="modal" role="dialog">
         <div class="modal2">
-            <div class="modalContent" id="load_data">
-            </div>
-                <div class="modal-close2"></div>
+            <div class="modalContent" id="load_data"></div>
+            <div class="modal-close2"></div>
         </div>
     </div>  
 

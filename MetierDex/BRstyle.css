@@ -36,7 +36,7 @@ a{
     border-right: 60px solid white;
     border-bottom: 35px solid transparent;
     position: absolute;
-    top: 3%;
+    top: 1%;
     left: 2%;
 }
 
@@ -100,6 +100,7 @@ a{
 
 .modal-bg{
     position: fixed;
+    z-index: 9999;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -217,7 +218,7 @@ input{
 
 .containMascotte2{
     position: absolute;
-    top: 2%;
+    top: 1%;
     right: 1%;
     z-index: 99;
     display: flex;
@@ -270,13 +271,10 @@ input{
 	border-color: rgba(255, 255, 255, 0);
 	border-left-color: #fff;
 	border-width: 35px;
-	/* margin-top: -35px; */
 }
 
 .textModalInfo2{
     width: 100%;
-    /* height: 100%; */
-    /* border: solid black; */
     text-align: center;
     font-size: 1.3rem;
     padding: 10px;
@@ -293,8 +291,8 @@ input{
 }
 
 .carteMetier{
-    width: 225px;
-    height: 370px;
+    width: 255px;
+    height: 415px;
     border-radius: 17px;
     margin-bottom: 25px;
     cursor: pointer;
@@ -302,6 +300,10 @@ input{
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.158);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carteMetier:hover{
@@ -311,26 +313,32 @@ input{
 
 .carteMetier h3{
     font-size: .950rem;
-    padding-left: 20px;
-    padding-top: 12px;
-    max-width: 200px;
+    max-width: 240px;
     margin: 0;
     color: black;
+    position: absolute;
+    top: 3%;
+    left: 9%;
 }
 
 .intro1{
-    color: black;
-    font-size: 0.775rem;
-    margin: auto;
-    margin-top: 185px;
-    line-height: 15px;
-    width: 80%;
+    width: 90%;
+    height: 35%;
+    position: absolute;
+    bottom: -4%;
     text-align: center;
+    color: black;
+    font-size: 0.95rem;
+    line-height: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-bg2{
     position: fixed;
-    z-index: 9999;
+    z-index: 99999;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -351,7 +359,7 @@ input{
 
 .modal2{
     position: relative;
-    background-color: #fff;
+    background-color: rgb(255, 247, 235);
     width: 80%;
     height: 95vh;
     display: flex;
@@ -359,7 +367,8 @@ input{
     align-items: center;
     flex-direction: column;
     border-radius: 40px;
-    overflow-x: scroll;
+    overflow-y: scroll;
+    border: solid 20px #E7AF6F;
 }
 
 body.modal-open{
@@ -388,7 +397,6 @@ body.modal-open{
 .titreMetierModal{
     font-size: 3.5rem;
     margin: 0;
-    padding-top: 20px;
 }
 
 .intro2{
