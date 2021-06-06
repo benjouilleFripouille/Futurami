@@ -576,7 +576,8 @@ h1.effet-shine:hover {
     align-items: center;
     max-width: 35%;
     font-size: 1.2rem;
-    background: white;
+    background: rgba(255, 255, 255, 0.473);
+    border: black solid;
     padding: 40px;
     /* border: black solid; */
     border-radius: 40px;
