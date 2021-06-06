@@ -49,6 +49,7 @@ card4.addEventListener('click', function () {
 
 // Paillette 
 $(document).ready(function(){
+    
     // instructions jQuery Paillettes Benji
 $('.cardB').on('click', function () {
     $('.pailletteB').css('visibility', 'hidden');

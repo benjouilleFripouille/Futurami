@@ -1,7 +1,7 @@
 <?php
 try{
-    //$bdd = new PDO('mysql:host=sqletud.u-pem.fr;dbname=mvelasco_db;', 'mvelasco','ka4wa7wow$', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-    $bdd = new PDO('mysql:host=localhost;dbname=futurammi;', 'root','', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    $bdd = new PDO('mysql:host=sqletud.u-pem.fr;dbname=mvelasco_db;', 'mvelasco','ka4wa7wow$', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    //$bdd = new PDO('mysql:host=localhost;dbname=futurammi;', 'root','', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 }
 catch(Exception $e){
     die('Une erreur a été trouvé:' .$e->getMessage());
@@ -14,6 +14,7 @@ catch(Exception $e){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Img/favicon.png">
     <link rel="stylesheet" href="BRstyle.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -38,7 +39,7 @@ catch(Exception $e){
         </div>
 
 
-    <a href=""><div class="triangle"></div></a>
+    <a href="https://etudiant.u-pem.fr/~mvelasco/Futurami/#accueil"><div class="triangle"></div></a>
 
     <form method="GET">
         <input type="search" name="s" placeholder="Rechercher un métier" class="barreRecherche">
@@ -55,7 +56,7 @@ catch(Exception $e){
             if(isset($rechercheTrouve) AND $rechercheTrouve->rowCount() > 0){
                 while($resultat = $rechercheTrouve->fetch()){
                     ?>
-                <a href="#" data-id='<?php echo $resultat['id']?>' data-target="#modal" class="parceQue"><div class="carteMetier">
+                <a href="#" data-id='<?php echo $resultat['id']?>' data-target="#modal" class="parceQue"><div class="carteMetier" style="background-image: url('<?php echo $resultat['fond_carte']?>')">
                     <h3><?= $resultat['nom'] ?></h3>
                     <p class="intro1">
                         <?= $resultat['introduction'] ?>
@@ -79,7 +80,14 @@ catch(Exception $e){
         </div>
     </div>  
 
-
+    <div class="containMascotte2 levit">
+                <img src="../Img/mascotte.png" alt="Mascotte" class="mascotte2">
+                <div class="infoModal2">
+                    <p class="textModalInfo2">
+                        Bienvenue dans le Métier-dex...<br> Ici, tu peux rechercher un métier post-MMI parmis notre liste de 1er choix.
+                    </p>
+                </div>
+            </div>
 
     </section>
     <script type="text/javascript" src="BRjava.js"></script>

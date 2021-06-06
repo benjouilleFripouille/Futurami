@@ -9,7 +9,7 @@ body {
     font-family: 'FuturaPTBook';
     background: black;
     background: linear-gradient(180deg, rgba(2, 103, 143, 1) 0%, rgba(118, 120, 177, 1) 12%, rgba(176, 137, 226, 1) 25%, rgba(227, 171, 229, 1) 36%, rgba(255, 175, 175, 1) 47%, rgba(254, 212, 174, 1) 59%, rgba(255, 243, 216, 1) 79%, rgba(0, 0, 0, 1) 80%);
-
+    overflow-x: hidden;
 }
 
 section {
@@ -28,8 +28,16 @@ a {
     color: white;
 }
 
-span{
+span {
     font-weight: bold;
+}
+
+.levit {
+    animation: mascotte2 1.8s ease-in-out infinite alternate-reverse;
+}
+
+.levit:hover {
+    animation-play-state: paused;
 }
 
 
@@ -147,28 +155,28 @@ span{
 }
 
 .nlA::before,
-.nlA::after{
+.nlA::after {
     background: #126A94;
 }
 
 .nlMD::before,
-.nlMD::after{
-    background:#C094E3;
+.nlMD::after {
+    background: #C094E3;
 }
 
 .nlMJ::before,
-.nlMJ::after{
-    background:#FFB7AF;
+.nlMJ::after {
+    background: #FFB7AF;
 }
 
 .nlB::before,
-.nlB::after{
-    background:#FEE4C3;
+.nlB::after {
+    background: #FEE4C3;
 }
 
 .nlC::before,
-.nlC::after{
-    background:#000;
+.nlC::after {
+    background: #000;
 }
 
 .nav-link::after {
@@ -199,6 +207,8 @@ span{
     margin-top: 5%;
     width: 800px;
     height: 500px;
+    position: relative;
+    z-index: -99;
 }
 
 .B2 {
@@ -211,29 +221,29 @@ span{
     right: 0;
 }
 
-.containMascotte1{
+.containMascotte1 {
     position: absolute;
     top: 1%;
-    left: 1%;
+    left: 1.5%;
     display: flex;
     flex-direction: row;
 }
 
-.mascotte1{
-    width: 15%;
+.mascotte1 {
+    width: 150px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
 }
 
-.infoModal1{
+.infoModal1 {
     width: 380px;
     height: 210px;
     border-radius: 7px;
     background: white;
     position: absolute;
     z-index: 999;
-    left: 20%;
+    left: 130%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,30 +252,27 @@ span{
     transition: all 0.8s ease-in-out;
 }
 
-.containMascotte1:hover > .infoModal1{
+.containMascotte1:hover>.infoModal1 {
     visibility: visible;
     opacity: 1;
 }
 
-.infoModal1::after{
+.infoModal1::after {
     right: 100%;
-	top: 20%;
-	border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(255, 255, 255, 0);
-	border-right-color: #fff;
-	border-width: 35px;
-	/* margin-top: -35px; */
+    top: 20%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 35px;
 }
 
-.textModalInfo1{
+.textModalInfo1 {
     width: 100%;
-    /* height: 100%; */
-    /* border: solid black; */
     text-align: center;
     font-size: 1.3rem;
     padding: 10px;
@@ -298,30 +305,29 @@ span{
     right: 0;
 }
 
-.containMascotte2{
+.containMascotte2 {
     position: absolute;
     top: 60%;
     right: 1%;
-    /* z-index: -9999; */
     display: flex;
     flex-direction: row-reverse;
 }
 
-.mascotte2{
-    width: 15%;
+.mascotte2 {
+    width: 150px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
 }
 
-.infoModal2{
+.infoModal2 {
     width: 380px;
     height: 210px;
     border-radius: 7px;
     background: white;
     position: absolute;
     /* z-index: 9999; */
-    right: 20%;
+    right: 130%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,30 +336,27 @@ span{
     transition: all 0.8s ease-in-out;
 }
 
-.containMascotte2:hover > .infoModal2{
+.containMascotte2:hover>.infoModal2 {
     visibility: visible;
     opacity: 1;
 }
 
-.infoModal2::after{
+.infoModal2::after {
     left: 100%;
-	top: 20%;
-	border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(255, 255, 255, 0);
-	border-left-color: #fff;
-	border-width: 35px;
-	/* margin-top: -35px; */
+    top: 20%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #fff;
+    border-width: 35px;
 }
 
-.textModalInfo2{
+.textModalInfo2 {
     width: 100%;
-    /* height: 100%; */
-    /* border: solid black; */
     text-align: center;
     font-size: 1.3rem;
     padding: 10px;
@@ -484,7 +487,7 @@ h1.effet-shine:hover {
     left: -10vw;
 }
 
-.containMascotte3{
+.containMascotte3 {
     position: absolute;
     bottom: 13%;
     left: 18%;
@@ -492,21 +495,21 @@ h1.effet-shine:hover {
     flex-direction: row;
 }
 
-.mascotte3{
-    width: 15%;
+.mascotte3 {
+    width: 150px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
 }
 
-.infoModal3{
+.infoModal3 {
     width: 380px;
     height: 210px;
     border-radius: 7px;
     background: white;
     position: absolute;
     z-index: 999;
-    left: 20%;
+    left: 130%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -515,26 +518,26 @@ h1.effet-shine:hover {
     transition: all 0.8s ease-in-out;
 }
 
-.containMascotte3:hover > .infoModal3{
+.containMascotte3:hover>.infoModal3 {
     visibility: visible;
     opacity: 1;
 }
 
-.infoModal3::after{
+.infoModal3::after {
     right: 100%;
-	top: 20%;
-	border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(255, 255, 255, 0);
-	border-right-color: #fff;
-	border-width: 35px;
+    top: 20%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 35px;
 }
 
-.textModalInfo3{
+.textModalInfo3 {
     width: 100%;
     text-align: center;
     font-size: 1.3rem;
@@ -580,7 +583,7 @@ h1.effet-shine:hover {
     position: relative;
 }
 
-.texte p{
+.texte p {
     text-align: justify;
 
 }
@@ -604,12 +607,12 @@ h1.effet-shine:hover {
     right: 26%;
 }
 
-.N3{
+.N3 {
     top: 72vh;
     right: 0;
 }
 
-.containMascotte4{
+.containMascotte4 {
     position: absolute;
     top: 3%;
     left: 5%;
@@ -617,22 +620,26 @@ h1.effet-shine:hover {
     flex-direction: row;
 }
 
-.mascotte4{
-    width: 15%;
+.mascotte4 {
+    width: 140px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
 }
 
-.infoModal4{
+.mascotte4:hover {
+    animation: mascotte 1.5s infinite alternate-reverse;
+}
+
+.infoModal4 {
     width: 380px;
     height: 210px;
     border-radius: 7px;
     background: white;
     position: absolute;
     z-index: 999;
-    left: -20%;
-    top: -230%;
+    left: -85%;
+    top: -180%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -641,26 +648,26 @@ h1.effet-shine:hover {
     transition: all 0.8s ease-in-out;
 }
 
-.containMascotte4:hover > .infoModal4{
+.containMascotte4:hover>.infoModal4 {
     visibility: visible;
     opacity: 1;
 }
 
-.infoModal4::after{
+.infoModal4::after {
     top: 100%;
-	left: 40%;
-	border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(255, 255, 255, 0);
-	border-top-color: #fff;
-	border-width: 35px;
+    left: 40%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 35px;
 }
 
-.textModalInfo4{
+.textModalInfo4 {
     width: 100%;
     text-align: center;
     font-size: 1.3rem;
@@ -714,7 +721,7 @@ h1.effet-shine:hover {
     position: absolute;
     width: 320px;
     height: 500px;
-    background-image: url(./Img/sparkles.gif);
+    background-image: url("./Img/sparkles.gif");
     background-position: center;
     background-size: 180%;
     mix-blend-mode: color-dodge;
@@ -769,19 +776,19 @@ h1.effet-shine:hover {
     box-shadow: 0px 3px 18px 8px rgba(51, 23, 3, 1);
 }
 
-.card_backL{
+.card_backL {
     box-shadow: 0px 3px 18px 8px rgba(51, 23, 3, 1);
 }
 
-.card_backM{
+.card_backM {
     box-shadow: 0px 3px 18px 5px rgba(234, 117, 107, 0.9);
 }
 
-.card_backJ{
+.card_backJ {
     box-shadow: 0px 3px 18px 5px rgba(17, 12, 253, 0.9);
 }
 
-.card_backB{
+.card_backB {
     box-shadow: 0px 3px 18px 5px rgba(104, 23, 77, 0.9);
 }
 
@@ -942,29 +949,31 @@ h1.effet-shine:hover {
     transform: scaleX(1);
 }
 
-.containMascotte5{
+.containMascotte5 {
     position: absolute;
-    left: 3%;
-    top: 4%;
+    top: 3%;
+    left: 2%;
+    /* z-index: -9999; */
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    z-index: 30;
 }
 
-.mascotte5{
-    width: 15%;
+.mascotte5 {
+    width: 150px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
 }
 
-.infoModal5{
+.infoModal5 {
     width: 380px;
     height: 210px;
     border-radius: 7px;
     background: white;
     position: absolute;
     z-index: 999;
-    left: 20%;
+    left: 130%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -973,34 +982,31 @@ h1.effet-shine:hover {
     transition: all 0.8s ease-in-out;
 }
 
-.containMascotte5:hover > .infoModal5{
+.containMascotte5:hover>.infoModal5 {
     visibility: visible;
     opacity: 1;
 }
 
-.infoModal5::after{
+.infoModal5::after {
     right: 100%;
-	top: 20%;
-	border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(255, 255, 255, 0);
-	border-right-color: #fff;
-	border-width: 35px;
+    top: 20%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 35px;
 }
 
-.textModalInfo5{
+.textModalInfo5 {
     width: 100%;
     text-align: center;
     font-size: 1.3rem;
     padding: 10px;
 }
-
-
-
 
 
 /* Formulaire */
@@ -1280,6 +1286,65 @@ form {
     transform: translateY(10px);
 }
 
+.containMascotte6 {
+    position: absolute;
+    top: 3%;
+    left: 0%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mascotte6 {
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.infoModal6 {
+    width: 380px;
+    height: 210px;
+    border-radius: 7px;
+    background: white;
+    position: absolute;
+    /* z-index: 9999; */
+    right: 138%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    
+}
+
+.containMascotte6:hover>.infoModal6 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.infoModal6::after {
+    left: 100%;
+    top: 20%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #fff;
+    border-width: 35px;
+}
+
+.textModalInfo6 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+
 
 /* Fonts */
 
@@ -1359,6 +1424,16 @@ form {
         transform: rotateZ(0deg);
     }
 
+}
+
+@keyframes mascotte2 {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(15px);
+    }
 }
 
 @-webkit-keyframes shine {
