@@ -940,7 +940,7 @@ h1.effet-shine:hover {
 }
 
 .effet::before {
-    top: 85%;
+    top: 86%;
     transform-origin: left;
 }
 
