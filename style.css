@@ -309,7 +309,6 @@ span{
     position: absolute;
     top: 60%;
     right: 1%;
-    /* z-index: -9999; */
     display: flex;
     flex-direction: row-reverse;
 }
@@ -354,13 +353,10 @@ span{
 	border-color: rgba(255, 255, 255, 0);
 	border-left-color: #fff;
 	border-width: 35px;
-	/* margin-top: -35px; */
 }
 
 .textModalInfo2{
     width: 100%;
-    /* height: 100%; */
-    /* border: solid black; */
     text-align: center;
     font-size: 1.3rem;
     padding: 10px;
@@ -952,13 +948,13 @@ h1.effet-shine:hover {
 .effet:hover::after {
     transform: scaleX(1);
 }
-
 .containMascotte5{
     position: absolute;
-    left: 3%;
-    top: 4%;
+    top: 3%;
+    left: 2%;
+    /* z-index: -9999; */
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 .mascotte5{
@@ -1290,6 +1286,64 @@ form {
     cursor: pointer;
     transform: translateY(10px);
 }
+
+.containMascotte6{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mascotte6{
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.infoModal6{
+    width: 380px;
+    height: 210px;
+    border-radius: 7px;
+    background: white;
+    position: absolute;
+    /* z-index: 9999; */
+    right: 138%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.containMascotte6:hover > .infoModal6{
+    visibility: visible;
+    opacity: 1;
+}
+
+.infoModal6::after{
+    left: 100%;
+	top: 20%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #fff;
+	border-width: 35px;
+}
+
+.textModalInfo6{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
 
 
 /* Fonts */
