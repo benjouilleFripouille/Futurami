@@ -14,6 +14,7 @@ catch(Exception $e){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Img/mascotte.png">
     <link rel="stylesheet" href="BRstyle.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -79,7 +80,14 @@ catch(Exception $e){
         </div>
     </div>  
 
-
+    <div class="containMascotte2 levit">
+                <img src="../Img/mascotte.png" alt="Mascotte" class="mascotte2">
+                <div class="infoModal2">
+                    <p class="textModalInfo2">
+                        Bienvenue dans le Métier-dex...<br> Ici, tu peux rechercher un métier post-MMI parmis notre liste de 1er choix.
+                    </p>
+                </div>
+            </div>
 
     </section>
     <script type="text/javascript" src="BRjava.js"></script>

@@ -185,6 +185,73 @@ input{
 
 /* Les cartes */
 
+.containMascotte2{
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    z-index: 99;
+    display: flex;
+    flex-direction: row-reverse;
+    animation: mascotte 1.8s ease-in-out infinite alternate-reverse;
+    width: auto;
+}
+
+.containMascotte2:hover{
+    animation-play-state: paused;
+}
+
+.mascotte2{
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.infoModal2{
+    width: 380px;
+    height: 210px;
+    border-radius: 7px;
+    background: white;
+    position: absolute;
+    /* z-index: 9999; */
+    right: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.containMascotte2:hover > .infoModal2{
+    visibility: visible;
+    opacity: 1;
+}
+
+.infoModal2::after{
+    left: 100%;
+	top: 20%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #fff;
+	border-width: 35px;
+	/* margin-top: -35px; */
+}
+
+.textModalInfo2{
+    width: 100%;
+    /* height: 100%; */
+    /* border: solid black; */
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
 .afficheMetiers{
     margin-top: 20px;
     max-width: 90vw;
@@ -192,24 +259,31 @@ input{
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: auto;
+    margin-top: 50px;
 }
 
 .carteMetier{
-    width: 250px;
-    height: 360px;
-    /* border: black solid; */
+    width: 225px;
+    height: 370px;
+    /* margin-right: 20px; */
     border-radius: 17px;
     margin-bottom: 25px;
     cursor: pointer;
     background-image: url("../Img/fond-carte/Dev/dev.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.158);
+}
+
+.carteMetier:hover{
+    animation: carte 1.5s ease-in-out infinite alternate-reverse;
+    transform: scale(2);
 }
 
 .carteMetier h3{
     font-size: .950rem;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-top: 12px;
     max-width: 200px;
     margin: 0;
@@ -229,6 +303,7 @@ input{
 
 .modal-bg2{
     position: fixed;
+    z-index: 9999;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -362,4 +437,22 @@ body.modal-open{
         transform: translateX(40px);
     }
 
+}
+
+@keyframes carte{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mascotte {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(15px);
+    }
 }

@@ -32,6 +32,14 @@ span{
     font-weight: bold;
 }
 
+.levit{
+    animation: mascotte2 1.8s ease-in-out infinite alternate-reverse;
+}
+
+.levit:hover{
+    animation-play-state: paused;
+}
+
 
 /* ScrollBar */
 
@@ -199,6 +207,8 @@ span{
     margin-top: 5%;
     width: 800px;
     height: 500px;
+    position: relative;
+    z-index: -99;
 }
 
 .B2 {
@@ -214,13 +224,13 @@ span{
 .containMascotte1{
     position: absolute;
     top: 1%;
-    left: 1%;
+    left: 1.5%;
     display: flex;
     flex-direction: row;
 }
 
 .mascotte1{
-    width: 15%;
+    width: 150px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -233,7 +243,7 @@ span{
     background: white;
     position: absolute;
     z-index: 999;
-    left: 20%;
+    left: 130%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,13 +269,10 @@ span{
 	border-color: rgba(255, 255, 255, 0);
 	border-right-color: #fff;
 	border-width: 35px;
-	/* margin-top: -35px; */
 }
 
 .textModalInfo1{
     width: 100%;
-    /* height: 100%; */
-    /* border: solid black; */
     text-align: center;
     font-size: 1.3rem;
     padding: 10px;
@@ -308,7 +315,7 @@ span{
 }
 
 .mascotte2{
-    width: 15%;
+    width: 150px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -321,7 +328,7 @@ span{
     background: white;
     position: absolute;
     /* z-index: 9999; */
-    right: 20%;
+    right: 130%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -493,7 +500,7 @@ h1.effet-shine:hover {
 }
 
 .mascotte3{
-    width: 15%;
+    width: 150px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -506,7 +513,7 @@ h1.effet-shine:hover {
     background: white;
     position: absolute;
     z-index: 999;
-    left: 20%;
+    left: 130%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -618,10 +625,14 @@ h1.effet-shine:hover {
 }
 
 .mascotte4{
-    width: 15%;
+    width: 140px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
+}
+
+.mascotte4:hover{
+    animation: mascotte 1.5s infinite alternate-reverse;
 }
 
 .infoModal4{
@@ -631,8 +642,8 @@ h1.effet-shine:hover {
     background: white;
     position: absolute;
     z-index: 999;
-    left: -20%;
-    top: -230%;
+    left: -85%;
+    top: -180%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -714,7 +725,7 @@ h1.effet-shine:hover {
     position: absolute;
     width: 320px;
     height: 500px;
-    background-image: url(./Img/sparkles.gif);
+    background-image: url("./Img/sparkles.gif");
     background-position: center;
     background-size: 180%;
     mix-blend-mode: color-dodge;
@@ -1359,6 +1370,15 @@ form {
         transform: rotateZ(0deg);
     }
 
+}
+
+@keyframes mascotte2 {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(15px);
+    }
 }
 
 @-webkit-keyframes shine {
