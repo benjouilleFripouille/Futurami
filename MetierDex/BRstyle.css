@@ -274,7 +274,7 @@ input{
     border-radius: 17px;
     margin-bottom: 25px;
     cursor: pointer;
-    background-image: url("../Img/fond-carte/Dev/dev.png");
+    /* background-image: url("../Img/fond-carte/Dev/dev.png"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

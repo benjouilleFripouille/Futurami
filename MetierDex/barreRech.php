@@ -1,7 +1,7 @@
 <?php
 try{
-    //$bdd = new PDO('mysql:host=sqletud.u-pem.fr;dbname=mvelasco_db;', 'mvelasco','ka4wa7wow$', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-    $bdd = new PDO('mysql:host=localhost;dbname=futurammi;', 'root','', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    $bdd = new PDO('mysql:host=sqletud.u-pem.fr;dbname=mvelasco_db;', 'mvelasco','ka4wa7wow$', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    //$bdd = new PDO('mysql:host=localhost;dbname=futurammi;', 'root','', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 }
 catch(Exception $e){
     die('Une erreur a été trouvé:' .$e->getMessage());
@@ -39,7 +39,7 @@ catch(Exception $e){
         </div>
 
 
-    <a href=""><div class="triangle"></div></a>
+    <a href="https://etudiant.u-pem.fr/~mvelasco/Futurami/#accueil"><div class="triangle"></div></a>
 
     <form method="GET">
         <input type="search" name="s" placeholder="Rechercher un métier" class="barreRecherche">
@@ -56,7 +56,7 @@ catch(Exception $e){
             if(isset($rechercheTrouve) AND $rechercheTrouve->rowCount() > 0){
                 while($resultat = $rechercheTrouve->fetch()){
                     ?>
-                <a href="#" data-id='<?php echo $resultat['id']?>' data-target="#modal" class="parceQue"><div class="carteMetier">
+                <a href="#" data-id='<?php echo $resultat['id']?>' data-target="#modal" class="parceQue"><div class="carteMetier" style="background-image: url('../Img/fond-carte/Dev/dev_graphisme.png')">
                     <h3><?= $resultat['nom'] ?></h3>
                     <p class="intro1">
                         <?= $resultat['introduction'] ?>
