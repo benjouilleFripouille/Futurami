@@ -48,10 +48,8 @@ card4.addEventListener('click', function () {
 
 
 // Paillette 
-var delai = 3000;
 $(document).ready(function(){
     
-setTimeout(function() {
     // instructions jQuery Paillettes Benji
 $('.cardB').on('click', function () {
     $('.pailletteB').css('visibility', 'hidden');
@@ -83,7 +81,6 @@ $('.cardL').on('click', function () {
 $('.card_backL').on('click', function () {
     $('.pailletteL').css('visibility', 'visible');
 })
-}, delai);
 });
 
 
