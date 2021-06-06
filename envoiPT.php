@@ -2,8 +2,9 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Contact - </title>
-  <link rel="stylesheet" href="styles-envoi.css">
+  <title> FuturaMMI </title>
+  <link rel="stylesheet" href="envoiPT.css">
+  <link rel="icon" type="image/png" href="./Img/favicon.png">
 </head>
 <body>
 
@@ -20,7 +21,7 @@ catch (Exception $e) {
     die('Erreur : '.$e->getMessage());
 }
 
-try {
+
 if(isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["mail"]) && isset($_POST["objet"]) && isset($_POST["message"])){
 
   $sql = "INSERT INTO formulairePT (nom, prenom, mail, objet, message) VALUES (:nom, :prenom, :mail, :objet, :message)";
@@ -43,17 +44,13 @@ if(isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["mail"]) && i
         echo '<script>alert("Une erreur est survenue :(")</script>';
     }
 }
-}catch (Exception $e) {
-  die('Erreur : '.$e->getMessage());
-}
+
 
 $req = null;
 echo "<h1 style='margin: auto;'>Merci pour votre message !</h1>";
 
 }
 ?>
- 
-
-  <a href="https://etudiant.u-pem.fr/~mvelasco/index.php">Retour au site</a>
+<div class="lien"><a href="https://etudiant.u-pem.fr/~mvelasco/Futurami/#accueil">Retour au site</a></div>
 </body>
 </html>
